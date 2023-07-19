@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* to be removed */
+#navbar {
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #9baaad;
+}
+
+#ld-city-card {
+    margin: 20px;
+    padding: 10px;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#ld-city-image {
+    width: 100%;
+    border-radius: 8px 0 0 0;
+}
+
+.ld-city-details-table td{
+    text-align: left;
+    padding: 5px 10px;
+    /* border: 1px solid black; */
+}
+
+.ld-city-map {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+
+.ld-city-map > iframe {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+/* City card right panel */
+.ld-city-name {
+    margin-bottom: 10px;
+}
+.ld-city-about {
+    font-size: 16px;
+    color: #494949;
+    font-style: italic;
+}
