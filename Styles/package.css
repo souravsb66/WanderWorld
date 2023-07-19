@@ -1,0 +1,170 @@
+body {
+    font-family: 'Poppins' !important;
+}
+
+.body-parent{
+    /* background-color:rgb(67,161,255) ; */
+    position: relative;
+    /* width: 800px; */
+}
+
+.plan-price{
+    margin-left: -25px;
+    background-color: yellow;
+    padding: 10px;
+    color: black !important;
+}
+
+.red-text {
+    color: darkblue;
+}
+
+.red-text-large {
+    font-size: xx-large;
+}
+
+
+.checked:before{
+    content: "✓";
+    align-items: center !important;
+    justify-content: center;
+    /* color: black; */
+    width: 1rem;
+    height: 1rem;
+    padding: 14px;
+    /* padding-top: 17px;
+    padding-bottom: 19px;
+    padding-left: 18px;
+    padding-right: 18px;  */
+    margin-right: 1rem;
+    border-radius: 30px;
+    /* background: #c1eee0; */
+    font-size: 20px;
+    display: inline-flex;
+}
+
+
+
+.unchecked:before{
+    content: "X";
+    align-items: center !important;
+    justify-content: center;
+    color: white;
+    width: 1rem;
+    height: 1rem;
+    /* padding: 18px; */
+    padding: 14px;
+    margin-right: 1rem;
+    border-radius: 30px;
+    background: red;
+    font-size: 15px;
+    display: inline-flex;
+}
+
+.light_card .checked:before{
+    background: rgb(67,161,255) !important;
+    color: white;
+}
+
+.dark_card  .checked:before{
+    background: white;
+    color:rgb(67,161,255) !important;
+}
+
+   
+li{
+    list-style-type: none;
+    margin-top: 1rem;
+    
+}
+
+.dark_card{
+    background-color: rgb(67,161,255) !important;
+    box-shadow: rgba(178, 191, 198, 0.874) 0px 3px 8px;
+    border: 2px solid white !important;
+
+}
+.light_card{
+    box-shadow: rgba(178, 191, 198, 0.874) 0px 3px 8px;
+    color: rgb(67,161,255) !important;
+    border: 2px solid rgb(67,161,255) !important;
+}
+
+/*  */
+
+
+@media only screen and (min-width: 900px) {
+    .side-card{
+        position: relative;
+        right: 4%;
+    }
+    .first-card{
+        position: relative;
+        left:4%;
+    }
+    .dark_card{
+        position: absolute;
+        z-index: 1;
+    }
+  }
+
+
+/*  */
+.light_card button {
+    color: rgb(67,161,255);
+    border:1.3px solid rgb(67,161,255);
+}
+
+.plan-price{
+    font-size: 20px;
+}
+
+.dark_card button:hover{
+    color: rgb(67,161,255) ;
+}
+
+.card li{
+font-size: 15px;
+}
+
+.bottom-red {
+border-bottom: solid 5px white;
+align-items: baseline !important;
+}
+.bottom-blue {
+border-bottom: solid 5px rgb(67,161,255);
+align-items: baseline !important;
+}
+
+.addon {
+    margin-left: 60px !important;
+    margin-top: 50px;
+}
+
+
+/* card-end */
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: auto;
+    padding: 40px !important;
+    /* background-color: transparent !important; */
+    transform: translate(-50%, -50%);
+    /* background-image: linear-gradient( to right, rgb(67,161,255), white,rgb(67,161,255) ); */
+    /* background-color: rgb(67,161,255); */
+    background-color: rgb(227, 221, 221,0.8);
+    padding: 20px;
+    border: 2px solid white;
+    /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); */
+    box-shadow: rgba(178, 191, 198, 0.874) 0px 3px 8px;
+    z-index:1 ;
+  }
+
+  /* .pop-card{
+
+  } */
