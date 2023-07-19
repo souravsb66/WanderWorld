@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* to be removed */
+#navbar {
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #9baaad;
+}
+
+#ln-main-section {
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+
+.ln-cards {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    border-radius: 10px;
+    /* height: 200px; */
+    margin-bottom: 20px;
+}
+.ln-cards:hover {
+    background-color: #f0f0f0;
+}
+.ln-card-image {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.ln-card-image > img {
+    width: 100%;
+    /* height: 180px; */
+    border-radius: 5px 0 0 5px;
+    /* object-fit: scale-down; */
+    object-fit: cover;
+}
+.ln-card-body {
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.ln-card-body > div {
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.ln-card-body ul {
+    list-style: none;
+}
+
+/* city details */
+.ln-card-city-details * {
+    margin-bottom: 5px;
+}
+.ln-card-city {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.ln-card-state {
+    font-size: 16px;
+    color: #666666;
+}
+.ln-card-population {
+    font-size: 16px;
+    color: #6cb2d3;
+}
+
+/* city attractions */
+.ln-card-attractions {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.ln-card-attractions-list-items {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+/* city activities */
+.ln-card-activities {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.ln-card-activities-list-items {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+/* card buttons */
+.ln-card-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ln-card-btn {
+    padding: 5px 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: #43a1ff;
+    color: white;
+    font-size: 13px;
+    /* font-weight: bold; */
+}
+.ln-card-btn:hover {
+    cursor: pointer;
+    background-color: #358cdd;
+    /* color: white; */
+}
+.ln-card-btn:active {
+    transform: scale(0.95);
+}
