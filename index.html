@@ -3,9 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Styles/index.css">
     <title>WanderWorld</title>
 </head>
 <body>
-   
+    <header>
+        <div class="header-left-items">
+                <button id="menu"><i class="fa-solid fa-bars"></i></button>
+            <div id="logo">WanderWorld</div>
+        </div>
+        <div class="header-right-items">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="/discover.html">Discover</a></li>
+                    <li><a href="/locations.html">Locations</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>            
+            </nav>
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass">fd</i></button>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+            <a href="" id="signup">Sign up</a>
+        </div>
+        
+        <div id="searchBar">
+            <button id="cancelSearch"><i class="fa-solid fa-arrow-left"></i></button>
+            <input type="search" name="search" id="search" placeholder="Search for a destination">
+            
+            <button id="searchEnter"><i class="fa-solid fa-magnifying-glass">fd</i></button>
+        </div>
+    </header>
+
+
+    <section id="hero">
+        <h1>Feel the Real Beauty of Nature</h1>
+        <div id="quickbook">
+            <div class="quickbook-input">
+                <select name="locations" id="locations">
+                    <option value="">Destination</option>
+                    <option value="">Rajasthan</option>
+                    <option value="">Goa</option>
+                </select>
+            </div>
+            <div class="quickbook-input">
+                <input type="date" id="start">
+            </div>
+            <div class="quickbook-input">
+                <select name="people" id="people">
+                    <option value="">People</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <button>Book Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Newsletter section -->
+        <section id="newsletter">
+            <h2>Subscribe Our Newsletter</h2>
+            <div class="newletter-form">
+                <div id="email-container">
+                    <input type="email" placeholder="Enter Your Email">
+                </div>
+                <button>Subscribe</button>
+            </div>
+        </section>
+
+
+        <div id="footer-main">
+            <div class="address">
+                <p>WanderWorld</p>
+                <p><i class="fa-solid fa-location-dot"></i> Lakshmipuram road, Guntur, Andhra Pradesh, India</p>
+                <p><i class="fa-solid fa-phone"></i> 0863 -222000</p>
+                <p><i class="fa-solid fa-envelope"></i> support@wanderworld.com</p>
+            </div>
+
+            <div class="link-set" id="link-set-1">
+                <ul>
+                    <li><a href="">My Account</a></li>
+                    <li><a href="">Search Terms</a></li>
+                    <li><a href="">Advanced Search</a></li>
+                    <li><a href="">Orders & Returns</a></li>
+                    <li><a href="">Help & FAQ</a></li>
+                    <li><a href="">Store Locations</a></li>
+                </ul>
+            </div>
+            <div class="link-set" id="link-set-2">
+                <ul>
+                    <li><a href="">Information</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Refunds & Returns</a></li>
+                    <li><a href="">Delivery</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="link-set" id="link-set-3">
+                <ul>
+                    <li><a href="">Information</a></li>
+                    <li><a href="">Rock Climbing Gears</a></li>
+                    <li><a href=""></a>Solar Powered Helmet</li>
+                    <li><a href=""></a>Pull Rope Rubber</li>
+                    <li><a href="">Pairing Knife</a></li>
+                    <li><a href="">Ladder Golf</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="socials">
+            <p>Follow Us On</p>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- End of footer -->
+
+    <!-- Sidebar -->
+
+    <div id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Locations</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+        </nav>
+        <button id="back"><i class="fa-solid fa-arrow-left"></i></button>
+    </div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Scripts/main.js" type="module"></script>
 </html>
