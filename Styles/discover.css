@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#pagiContainer{
+    width: 80%;
+    margin: auto;
+}
+
+.cardlist{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.card{
+    text-align: justify;
+    line-height: 1.5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    
+}
+.imageDiv{
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: 0.3s;
+}
+
+.card img:hover{
+    transform: scale(1.2);
+}
+
+#pagination{
+    text-align: center;
+}
+
+.pagination-button{
+    
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    margin: 25px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination-button:hover{
+    transform: scale(1.1);
+    background-color: lightgrey;
+}
+.h1{
+    margin-bottom: 10px;
+}
+.h1:hover{
+    color: rgb(62,168,255);
+    transition: 0.3s;
+}
+p{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.readMore{
+    align-items: center;
+}
