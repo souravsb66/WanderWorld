@@ -1,0 +1,262 @@
+:root {
+    --primary: #3EA8FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+.active {
+    color: var(--primary)
+}
+
+header {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#searchBar {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    padding: 15px 50px;
+    display: none;
+}
+
+#search {
+    width: 60%;
+}
+
+
+
+#menu {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#back, #searchEnter, #cancelSearch {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    #menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header > .header-right-items > nav {
+        display: none;
+    }
+
+    header {
+        padding: 15px 5px;
+    }
+}
+
+.header-left-items, .header-right-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header > .header-right-items > nav > ul {
+    display: flex;
+    gap: 20px;
+}
+
+header > .header-right-items > nav > ul > li {
+    list-style: none;
+}
+
+
+
+header a {
+    text-decoration: none;
+    height: 100%;
+    color: #363636;
+}
+
+header a:hover {
+    color: var(--primary);
+}
+
+#signup {
+    background-color: var(--primary);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#searchBtn {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 30px;
+    line-height: 2;;
+}
+
+footer  ul > li {
+    list-style: none;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#newsletter > h2 {
+    text-align: center;
+}
+
+.newletter-form {
+    /* width: fit-content; */
+    display: flex;
+    gap: 20px;
+    margin: 20px auto;
+    flex-direction: column;
+}
+
+.newletter-form > #email-container{
+    background-color: #fff;
+    color: var(--primary);
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.newletter-form > #email-container > input {
+    width: 100%;
+    /* max-width: 90%; */
+}
+
+.newletter-form > #email-container > input::placeholder {
+    color: #0383ec;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.newletter-form > button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .newletter-form {
+        width: fit-content;
+        display: flex;
+        gap: 20px;
+        margin: 50px auto;
+        flex-direction: row;
+    }
+
+    .newletter-form > #email-container > input {
+        width: 400px;
+    }
+}
+
+#footer-main {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+    #footer-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.link-set >ul > li:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.socials {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.socials > ul >li{
+    display: inline;
+}
+
+
+/* sidebar */
+
+#sidebar {
+    width: 80%;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: -10000px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 500ms ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#sidebar > nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sidebar > nav > ul > li{
+    list-style: none;
+}
+
+#sidebar > nav > ul > li a {
+    text-decoration: none;
+    color: #363636;
+}
+
+#sidebar > button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
