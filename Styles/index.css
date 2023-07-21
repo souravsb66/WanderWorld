@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* header */
@@ -19,7 +20,6 @@ header {
     gap: 20px;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -29,6 +29,10 @@ header {
     width: 100%;
     padding: 15px 50px;
     display: none;
+    /* display: flex; */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #search {
@@ -36,18 +40,17 @@ header {
 }
 
 
-
 #menu {
     display: none;
     padding: 10px;
-    background-color: #fff;
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-#back, #searchEnter, #cancelSearch {
+#back, #searchEnter, #searchBtn, #cancelSearch {
     padding: 10px;
-    background-color: #fff;
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
@@ -73,6 +76,15 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 15px 0;
+}
+
+.header-left-items {
+    margin-left: 50px;
+}
+
+.header-right-items {
+    margin-right: 50px;
 }
 
 header > .header-right-items > nav > ul {
@@ -103,11 +115,7 @@ header a:hover {
     border-radius: 20px;
 }
 
-#searchBtn {
-    padding: 10px;
-    background-color: #fff;
-    border: none;
-}
+
 
 /* footer */
 

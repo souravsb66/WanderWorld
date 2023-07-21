@@ -20,7 +20,7 @@ backBtn.addEventListener('click', () => {
 })
 
 searchBtn.addEventListener('click', () => {
-    searchBar.style.display = 'block'
+    searchBar.style.display = 'flex'
 })
 
 cancelSearch.addEventListener('click', () => {
