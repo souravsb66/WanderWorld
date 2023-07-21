@@ -1,489 +1,566 @@
 let locationData = 
 [
-    {
-        "id": 1,
-        "city": "Mumbai",
-        "state": "Maharashtra",
-        "population": "20,411,274",
-        "weather": "31°C, partly cloudy",
-        "languages": ["Marathi", "Hindi", "English"],
-        "images": ["https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg", "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg", "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg", "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"],
-        "videos": ["https://www.youtube.com/watch?v=3OzOe2oDzzU"],
-        "attractions": [
-            "Gateway of India",
-            "Marine Drive",
-            "Elephanta Caves",
-            "Siddhivinayak Temple",
-            "Juhu Beach"
-        ],
-        "activities": [
-            "Visit the iconic Gateway of India",
-            "Take a leisurely stroll along Marine Drive",
-            "Explore the ancient Elephanta Caves",
-            "Seek blessings at Siddhivinayak Temple",
-            "Relax at the popular Juhu Beach"
-        ],
-        "food": ["Vada Pav", "Pav Bhaji", "Biryani", "Pani Puri", "Falooda"],
-        "rating": 4.5,
-        "time_to_travel": "2-3 days",
-        "theme": "Metropolitan",
-        "blog": "Mumbai, the City of Dreams, is a bustling metropolis that never fails to impress. The city is known for its vibrant energy, iconic landmarks, and diverse culture. The majestic Gateway of India, overlooking the Arabian Sea, stands as a symbol of the city's rich history. Marine Drive, also known as the Queen's Necklace, offers stunning views of the coastline and is a popular spot for leisurely walks. The UNESCO World Heritage Site of Elephanta Caves, located on an island in Mumbai Harbor, is a treasure trove of ancient rock-cut temples. Siddhivinayak Temple, dedicated to Lord Ganesha, attracts devotees from all over the world. Juhu Beach, with its golden sands and lively atmosphere, is a favorite spot for locals and tourists alike. Mumbai's street food scene is legendary, with must-try dishes like Vada Pav, Pav Bhaji, and the flavorsome Biryani. Indulging in Pani Puri and relishing the famous Falooda are experiences not to be missed. Mumbai's cosmopolitan nature, bustling markets, and thriving film industry make it a city that offers a unique blend of history, culture, and dreams.",
-        "map": "https://www.mapsofindia.com/maps/maharashtra/mumbai-map-city.jpg",
-        "reviews": [
-            {
-            "name": "Rahul Deshmukh",
-            "review": "Mumbai is a city that never sleeps and has something for everyone. The iconic Gateway of India, with its architectural splendor, is a sight to behold. Marine Drive, with its breathtaking views of the Arabian Sea, is a place to unwind and enjoy the city's vibrant atmosphere. The Elephanta Caves, with their intricate carvings and rock-cut sculptures, are a must-visit for history buffs. Seeking blessings at Siddhivinayak Temple fills the heart with peace and positivity. Juhu Beach, with its bustling crowd and delicious street food, is a favorite hangout spot. The flavors of Mumbai, from the lip-smacking Vada Pav to the aromatic Biryani, are a gastronomic delight. Mumbai's spirit, diverse culture, and the warmth of its people make it a city that you can't help but fall in love with."
-            },
-            {
-            "name": "Sneha Mehta",
-            "review": "Mumbai is a city that never ceases to amaze. The majestic Gateway of India, overlooking the Arabian Sea, is a symbol of the city's grandeur. The captivating views and refreshing breeze at Marine Drive make it a perfect spot to relax and unwind. Exploring the ancient rock-cut temples of Elephanta Caves is like stepping into a different era. The divine atmosphere and spiritual vibrations at Siddhivinayak Temple are truly uplifting. Juhu Beach, with its golden sands and lively ambiance, is a great place to spend time with loved ones. The street food scene in Mumbai is a culinary adventure, with the mouthwatering Vada Pav and the flavorsome Pav Bhaji being must-try delicacies. Mumbai's vibrant energy, cultural diversity, and endless possibilities make it a city that leaves an indelible mark on your heart."
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "city": "Jaipur",
-        "state": "Rajasthan",
-        "population": "3,073,350",
-        "weather": "39°C, sunny",
-        "languages": ["Hindi", "Rajasthani"],
-        "images": ["https://www.maharanacab.com/wp-content/uploads/2020/02/8-Places-to-visit-in-Jaipur-at-Night-1.jpg", "https://www.travelanddestinations.com/wp-content/uploads/2020/12/Jaipur-attractions-Hawa-Mahal-768x512.jpg", "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/73/32.jpg", "https://i2.wp.com/travelmock.com/wp-content/uploads/2020/10/Birla-Mandir-Jaipur.jpg?resize=720%2C405&ssl=1"],
-        "videos": ["https://www.youtube.com/watch?v=9fKw2fNo7_8"],
-        "attractions": [
-          "Amber Fort",
-          "Hawa Mahal",
-          "City Palace",
-          "Jantar Mantar",
-          "Albert Hall Museum"
-        ],
-        "activities": [
-          "Explore the majestic Amber Fort",
-          "Admire the intricate architecture of Hawa Mahal",
-          "Visit the historical City Palace",
-          "Witness the astronomical instruments at Jantar Mantar",
-          "Discover the artifacts at Albert Hall Museum"
-        ],
-        "food": ["Dal Bati Churma", "Gatte ki Sabzi", "Laal Maas", "Kachori", "Ghevar"],
-        "rating": 4.7,
-        "time_to_travel": "2-3 days",
-        "theme": "Heritage",
-        "blog": "Jaipur, the Pink City of India, is a magnificent blend of royal heritage and vibrant culture. The city is renowned for its majestic forts, enchanting palaces, and colorful markets. Amber Fort, perched on a hilltop, offers panoramic views of the city and a chance to delve into its regal past. Hawa Mahal, with its intricate lattice work, is an architectural marvel. City Palace showcases the opulence of Jaipur's erstwhile rulers, while Jantar Mantar, the royal observatory, provides a glimpse into India's scientific advancements. The Albert Hall Museum houses an impressive collection of artifacts. Jaipur's cuisine is a treat for food lovers, with flavorsome dishes like Dal Bati Churma, Gatte ki Sabzi, and the spicy Laal Maas. The city's vibrant markets offer an array of handicrafts, textiles, and gemstones. Jaipur's rich history, cultural heritage, and warm hospitality make it a captivating destination.",
-        "map": "https://www.mapsofindia.com/maps/rajasthan/jaipur-city-map.jpg",
-        "reviews": [
-          {
-            "name": "Vikram Singh",
-            "review": "Jaipur is a city that takes you back in time. The grandeur of the Amber Fort, with its intricate architecture and stunning views, is awe-inspiring. Hawa Mahal, with its honeycomb-like structure, is a visual delight. Exploring the opulent City Palace and experiencing the astronomical wonders at Jantar Mantar were unforgettable experiences. The delicious flavors of Rajasthani cuisine, like Dal Bati Churma and Ghevar, added to the charm of Jaipur. The city's colorful markets, filled with textiles and handicrafts, offer a delightful shopping experience. Jaipur's rich cultural heritage and warm hospitality make it a must-visit destination."
-          },
-          {
-            "name": "Anita Sharma",
-            "review": "Jaipur is a city that stole my heart. The grandeur of the Amber Fort left me spellbound, and the intricate details of Hawa Mahal were mesmerizing. Exploring the City Palace, with its beautiful courtyards and museums, was like stepping back in time. Jantar Mantar, with its fascinating astronomical instruments, showcased the scientific achievements of the past. The flavors of Jaipur, from the aromatic Dal Bati Churma to the delicious Gatte ki Sabzi, delighted my taste buds. The city's vibrant markets, filled with traditional Rajasthani handicrafts, offered a treasure trove of souvenirs. Jaipur's rich heritage, warm people, and colorful culture make it a city that I would love to visit again."
-          }
-        ]
-    }
+  {
+    "id": 1,
+    "city": "Delhi",
+    "state": "Delhi",
+    "population": "31,400,000",
+    "weather": "34°C, mostly sunny",
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=BXKsq9d7RWo",
+    "attractions": [
+      "Red Fort",
+      "India Gate",
+      "Qutub Minar",
+      "Lotus Temple",
+      "Humayun's Tomb"
+    ],
+    "activities": [
+      "Explore the historic Red Fort",
+      "Visit the iconic India Gate",
+      "Marvel at the towering Qutub Minar",
+      "Find peace at the serene Lotus Temple",
+      "Discover the Mughal architecture at Humayun's Tomb"
+    ],
+    "food": [
+      "Chole Bhature",
+      "Paranthas",
+      "Butter Chicken",
+      "Dahi Bhalla",
+      "Kebabs"
+    ],
+    "rating": 4.5,
+    "travel_cost": "25,000",
+    "time_to_travel": "2-3 days",
+    "theme": "Historical",
+    "blog": "Delhi, the capital city of India, is a fascinating blend of old-world charm and modernity. The city is brimming with historical landmarks, such as the iconic Red Fort, the majestic India Gate, and the soaring Qutub Minar. Find solace in the peaceful Lotus Temple and admire the architectural marvel of Humayun's Tomb. Delhi is also a paradise for food lovers, offering mouthwatering delicacies like Chole Bhature, Paranthas, and Butter Chicken. The bustling markets, vibrant culture, and warm hospitality make Delhi an incredible destination to explore.",
+    "reviews": [
+      {
+        "name": "Rahul Verma",
+        "review": "Delhi's historical landmarks and vibrant culture are a treat for every traveler."
+      },
+      {
+        "name": "Ananya Singh",
+        "review": "Delhi's charm and delicious food made my trip unforgettable."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 2,
+    "city": "Agra",
+    "state": "Uttar Pradesh",
+    "population": "1,686,976",
+    "weather": "35°C, mostly sunny",
+    "languages": [
+      "Hindi",
+      "English",
+      "Urdu"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=QvaLCWxZvok",
+    "attractions": [
+      "Taj Mahal",
+      "Agra Fort",
+      "Fatehpur Sikri",
+      "Itimad-ud-Daulah's Tomb",
+      "Mehtab Bagh"
+    ],
+    "activities": [
+      "Witness the grandeur of Taj Mahal",
+      "Explore the historical Agra Fort",
+      "Visit the abandoned city of Fatehpur Sikri",
+      "Admire the intricate tomb of Itimad-ud-Daulah",
+      "Enjoy the scenic views at Mehtab Bagh"
+    ],
+    "food": [
+      "Petha",
+      "Bedai",
+      "Mughlai Cuisine",
+      "Paranthas",
+      "Jalebi"
+    ],
+    "rating": 4.7,
+    "travel_cost": "18,000",
+    "time_to_travel": "1-2 days",
+    "theme": "Historical",
+    "blog": "Agra, the city of the iconic Taj Mahal, offers a glimpse into the rich history of the Mughal era. Witness the grandeur of the Taj Mahal, a UNESCO World Heritage site and a symbol of eternal love. Explore the historical Agra Fort and the abandoned city of Fatehpur Sikri. Admire the intricate architecture of Itimad-ud-Daulah's Tomb and enjoy the scenic views at Mehtab Bagh. Indulge in the local delicacies like Petha, Bedai, and Mughlai Cuisine. Agra's architectural marvels and rich cultural heritage will leave you awe-struck.",
+    "reviews": [
+      {
+        "name": "Saurabh Singh",
+        "review": "Agra's Taj Mahal is truly a masterpiece, a must-visit for everyone."
+      },
+      {
+        "name": "Kavita Sharma",
+        "review": "The historical charm and delectable food of Agra made my trip wonderful."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 3,
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "population": "3,046,189",
+    "weather": "37°C, partly cloudy",
+    "languages": [
+      "Hindi",
+      "Rajasthani",
+      "English"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=mcYdMu8DfWY",
+    "attractions": [
+      "Hawa Mahal",
+      "Amber Fort",
+      "City Palace",
+      "Jantar Mantar",
+      "Nahargarh Fort"
+    ],
+    "activities": [
+      "Admire the intricate architecture of Hawa Mahal",
+      "Explore the majestic Amber Fort",
+      "Visit the historical City Palace",
+      "Witness the astronomical wonders at Jantar Mantar",
+      "Enjoy the panoramic views from Nahargarh Fort"
+    ],
+    "food": [
+      "Dal Baati Churma",
+      "Kachori",
+      "Gatte ki Sabzi",
+      "Laal Maas",
+      "Ghevar"
+    ],
+    "rating": 4.6,
+    "travel_cost": "21,500",
+    "time_to_travel": "2-3 days",
+    "theme": "Historical",
+    "blog": "Jaipur, the 'Pink City' of India, is known for its rich history and royal heritage. Admire the intricate architecture of Hawa Mahal and explore the majestic Amber Fort. Visit the historical City Palace and witness the astronomical wonders at Jantar Mantar. Enjoy the panoramic views of Jaipur from Nahargarh Fort. Indulge in the flavors of Rajasthani cuisine like Dal Baati Churma, Kachori, and Laal Maas. Jaipur's colorful bazaars, cultural performances, and warm hospitality will leave you enchanted.",
+    "reviews": [
+      {
+        "name": "Rajesh Sharma",
+        "review": "Jaipur's architectural beauty and Rajasthani cuisine were a delight."
+      },
+      {
+        "name": "Priya Patel",
+        "review": "Exploring the royal palaces and markets of Jaipur was an unforgettable experience."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 4,
+    "city": "Udaipur",
+    "state": "Rajasthan",
+    "population": "474,531",
+    "weather": "35°C, partly cloudy",
+    "languages": [
+      "Hindi",
+      "Rajasthani",
+      "English"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=9GhGJQYyB-0",
+    "attractions": [
+      "City Palace",
+      "Lake Pichola",
+      "Jag Mandir Palace",
+      "Fateh Sagar Lake",
+      "Saheliyon Ki Bari"
+    ],
+    "activities": [
+      "Explore the opulent City Palace",
+      "Boat ride on the scenic Lake Pichola",
+      "Visit the majestic Jag Mandir Palace",
+      "Relax by the tranquil Fateh Sagar Lake",
+      "Stroll through the beautiful Saheliyon Ki Bari"
+    ],
+    "food": [
+      "Dal Baati",
+      "Gatte ki Sabzi",
+      "Laal Maas",
+      "Kachori",
+      "Doodh Jalebi"
+    ],
+    "rating": 4.8,
+    "travel_cost": "23,000",
+    "time_to_travel": "2-3 days",
+    "theme": "Heritage",
+    "blog": "Udaipur, the 'City of Lakes' and the 'Venice of the East', is a stunning destination known for its beautiful lakes, palaces, and heritage. Explore the opulent City Palace and enjoy a boat ride on the scenic Lake Pichola. Visit the majestic Jag Mandir Palace and relax by the tranquil Fateh Sagar Lake. Stroll through the beautiful Saheliyon Ki Bari. Indulge in the flavors of Rajasthani cuisine like Dal Baati, Gatte ki Sabzi, and Laal Maas. Udaipur's royal charm, serene lakes, and cultural richness will captivate your heart.",
+    "reviews": [
+      {
+        "name": "Neha Singh",
+        "review": "Udaipur's picturesque lakes and palaces are a sight to behold."
+      },
+      {
+        "name": "Amit Verma",
+        "review": "Experiencing the royalty and hospitality of Udaipur was a memorable experience."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 5,
+    "city": "Jaisalmer",
+    "state": "Rajasthan",
+    "population": "78,000",
+    "weather": "40°C, sunny",
+    "languages": [
+      "Hindi",
+      "Rajasthani",
+      "English"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=CR8NjfRsOJM",
+    "attractions": [
+      "Jaisalmer Fort",
+      "Sam Sand Dunes",
+      "Patwon Ki Haveli",
+      "Gadsisar Lake",
+      "Kuldhara Village"
+    ],
+    "activities": [
+      "Explore the magnificent Jaisalmer Fort",
+      "Experience the desert safari at Sam Sand Dunes",
+      "Visit the intricately designed Patwon Ki Haveli",
+      "Enjoy boating at Gadsisar Lake",
+      "Discover the haunted stories of Kuldhara Village"
+    ],
+    "food": [
+      "Dal Baati",
+      "Ker Sangri",
+      "Gatte ki Sabzi",
+      "Murgh-e-Subz",
+      "Mohan Thaal"
+    ],
+    "rating": 4.7,
+    "travel_cost": "24,500",
+    "time_to_travel": "2-3 days",
+    "theme": "Desert",
+    "blog": "Jaisalmer, the 'Golden City' of India, is a desert paradise known for its majestic forts, sand dunes, and heritage havelis. Explore the magnificent Jaisalmer Fort and experience the desert safari at Sam Sand Dunes. Visit the intricately designed Patwon Ki Haveli and enjoy boating at Gadsisar Lake. Discover the haunted stories of Kuldhara Village. Indulge in the flavors of Rajasthani cuisine like Dal Baati, Ker Sangri, and Murgh-e-Subz. Jaisalmer's unique blend of history, culture, and desert landscape will leave you mesmerized.",
+    "reviews": [
+      {
+        "name": "Arun Kapoor",
+        "review": "Jaisalmer's sand dunes and camel safari were an unforgettable experience."
+      },
+      {
+        "name": "Rajani Bhatia",
+        "review": "Exploring the forts and enjoying Rajasthani delicacies in Jaisalmer was a delight."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 6,
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "population": "14,850,000",
+    "weather": "27°C, mostly cloudy",
+    "languages": [
+      "Bengali",
+      "Hindi",
+      "English"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=3OzOe2oDzzU",
+    "attractions": [
+      "Victoria Memorial",
+      "Howrah Bridge",
+      "Dakshineswar Kali Temple",
+      "Belur Math",
+      "Indian Museum"
+    ],
+    "activities": [
+      "Take a Tram Ride",
+      "Explore College Street Book Market",
+      "Indulge in Bengali Cuisine",
+      "Visit Kumartuli - The Potter's Colony",
+      "Experience Durga Puja Festival"
+    ],
+    "food": [
+      "Rosogolla",
+      "Misti Doi",
+      "Kathi Rolls",
+      "Macher Jhol",
+      "Phuchka"
+    ],
+    "rating": 4.4,
+    "travel_cost": "21,500",
+    "time_to_travel": "2-3 days",
+    "theme": "City",
+    "blog": "Kolkata, the city of joy, is known for its rich cultural heritage, historical landmarks, and delectable Bengali cuisine. The majestic Victoria Memorial, iconic Howrah Bridge, and divine Dakshineswar Kali Temple are a must-visit. Experience the nostalgia of taking a tram ride and exploring the famous College Street Book Market. Indulge in the heavenly taste of Rosogolla, Misti Doi, and Kathi Rolls. Don't miss the vibrant festivities of Durga Puja. Kolkata's warmth, charm, and artistic soul will leave you enchanted.",
+    "reviews": [
+      {
+        "name": "Arundhati Banerjee",
+        "review": "Kolkata's cultural richness and mouthwatering cuisine made my visit memorable."
+      },
+      {
+        "name": "Ravi Sharma",
+        "review": "Exploring the historical sites and savoring the local food in Kolkata was delightful."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 7,
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "population": "1,232,000",
+    "weather": "35°C, mostly sunny",
+    "languages": [
+      "Hindi",
+      "Bhojpuri",
+      "English"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=DqGRBNUY1gk",
+    "attractions": [
+      "Kashi Vishwanath Temple",
+      "Ganges River Ghats",
+      "Sarnath",
+      "Assi Ghat",
+      "Ramnagar Fort"
+    ],
+    "activities": [
+      "Seek blessings at Kashi Vishwanath Temple",
+      "Witness the mesmerizing Ganges River Ghats",
+      "Explore the ancient ruins of Sarnath",
+      "Experience the divine ceremony at Assi Ghat",
+      "Visit the historical Ramnagar Fort"
+    ],
+    "food": [
+      "Kachori Sabzi",
+      "Tamatar Chaat",
+      "Lassi",
+      "Thandai",
+      "Malaiyyo"
+    ],
+    "rating": 4.5,
+    "travel_cost": "19,500",
+    "time_to_travel": "1-2 days",
+    "theme": "Spiritual",
+    "blog": "Varanasi, the spiritual capital of India, is a city of temples and sacred rituals. Seek blessings at the revered Kashi Vishwanath Temple and witness the mesmerizing Ganges River Ghats. Explore the ancient ruins of Sarnath, where Lord Buddha preached his first sermon. Experience the divine Ganga Aarti ceremony at Assi Ghat and visit the historical Ramnagar Fort. Indulge in the local flavors of Kachori Sabzi, Tamatar Chaat, and Thandai. Varanasi's spiritual aura, serene ghats, and vibrant culture will leave you spiritually enriched.",
+    "reviews": [
+      {
+        "name": "Shweta Verma",
+        "review": "Varanasi's spiritual atmosphere and Ganga Aarti were truly soul-stirring."
+      },
+      {
+        "name": "Rahul Mehra",
+        "review": "Exploring the ancient temples and savoring the local cuisine made my trip memorable."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 8,
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "population": "20,742,000",
+    "weather": "32°C, partly cloudy",
+    "languages": [
+      "Marathi",
+      "Hindi",
+      "English"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=Iym6emrEXoA",
+    "attractions": [
+      "Gateway of India",
+      "Marine Drive",
+      "Juhu Beach",
+      "Siddhivinayak Temple",
+      "Elephanta Caves"
+    ],
+    "activities": [
+      "Visit the iconic Gateway of India",
+      "Take a stroll along the scenic Marine Drive",
+      "Relax at the popular Juhu Beach",
+      "Seek blessings at Siddhivinayak Temple",
+      "Explore the ancient Elephanta Caves"
+    ],
+    "food": [
+      "Vada Pav",
+      "Pav Bhaji",
+      "Bhel Puri",
+      "Pani Puri",
+      "Kebabs"
+    ],
+    "rating": 4.6,
+    "travel_cost": "22,000",
+    "time_to_travel": "2-3 days",
+    "theme": "Metropolitan",
+    "blog": "Mumbai, the 'City of Dreams', is a vibrant metropolis known for its fast-paced life, iconic landmarks, and lip-smacking street food. Visit the iconic Gateway of India and take a stroll along the scenic Marine Drive. Relax at the popular Juhu Beach and seek blessings at Siddhivinayak Temple. Explore the ancient Elephanta Caves. Indulge in the flavors of Mumbai's street food like Vada Pav, Pav Bhaji, and Bhel Puri. Mumbai's bustling energy, diverse culture, and Bollywood glamour will leave you captivated.",
+    "reviews": [
+      {
+        "name": "Rajesh Kumar",
+        "review": "Mumbai's cityscape and street food were a delightful experience."
+      },
+      {
+        "name": "Anjali Shah",
+        "review": "Exploring the iconic landmarks and experiencing the local life in Mumbai was amazing."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 9,
+    "city": "Goa",
+    "state": "Goa",
+    "population": "1,458,545",
+    "weather": "29°C, partly cloudy",
+    "languages": [
+      "Konkani",
+      "Marathi",
+      "Hindi",
+      "English"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=9LmV0SeCugk",
+    "attractions": [
+      "Baga Beach",
+      "Calangute Beach",
+      "Dudhsagar Waterfalls",
+      "Basilica of Bom Jesus",
+      "Anjuna Flea Market"
+    ],
+    "activities": [
+      "Relax on the sandy shores of Baga Beach",
+      "Enjoy water sports at Calangute Beach",
+      "Visit the majestic Dudhsagar Waterfalls",
+      "Explore the historic Basilica of Bom Jesus",
+      "Shop at the vibrant Anjuna Flea Market"
+    ],
+    "food": [
+      "Goan Fish Curry",
+      "Prawn Balchão",
+      "Bebinca",
+      "Feni",
+      "Pork Vindaloo"
+    ],
+    "rating": 4.7,
+    "travel_cost": "25,500",
+    "time_to_travel": "3-4 days",
+    "theme": "Beach",
+    "blog": "Goa, the party capital of India, is a beach lover's paradise known for its golden sandy shores, vibrant nightlife, and delightful seafood. Relax on the sandy shores of Baga Beach and enjoy water sports at Calangute Beach. Visit the majestic Dudhsagar Waterfalls and explore the historic Basilica of Bom Jesus. Shop for souvenirs and trinkets at the lively Anjuna Flea Market. Indulge in the flavors of Goan Fish Curry, Prawn Balchão, and Bebinca. Goa's laid-back vibe, picturesque beaches, and festive spirit will make your trip unforgettable.",
+    "reviews": [
+      {
+        "name": "Kriti Mehta",
+        "review": "Goa's beaches and nightlife are perfect for a fun-filled vacation."
+      },
+      {
+        "name": "Rajiv Gupta",
+        "review": "Exploring the waterfalls and trying Goan cuisine in Goa were amazing experiences."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 10,
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "population": "12,341,000",
+    "weather": "29°C, mostly sunny",
+    "languages": [
+      "Kannada",
+      "English",
+      "Hindi"
+    ],
+    "images": [
+      "https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg",
+      "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg",
+      "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg",
+      "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"
+    ],
+    "video": "https://www.youtube.com/watch?v=olHxk-A72qk",
+    "attractions": [
+      "Bangalore Palace",
+      "Lalbagh Botanical Garden",
+      "Tipu Sultan's Summer Palace",
+      "Cubbon Park",
+      "Bannerghatta National Park"
+    ],
+    "activities": [
+      "Explore the majestic Bangalore Palace",
+      "Relax in the scenic Lalbagh Botanical Garden",
+      "Visit Tipu Sultan's Summer Palace",
+      "Spend a peaceful time at Cubbon Park",
+      "Experience wildlife at Bannerghatta National Park"
+    ],
+    "food": [
+      "Masala Dosa",
+      "Bisi Bele Bath",
+      "Mangalorean Fish Curry",
+      "Chaat",
+      "Filter Coffee"
+    ],
+    "rating": 4.6,
+    "travel_cost": "18,000",
+    "time_to_travel": "2-3 days",
+    "theme": "Cosmopolitan",
+    "blog": "Bengaluru, the 'Silicon Valley of India', is a dynamic city known for its IT hub, lush green parks, and pleasant weather. Explore the majestic Bangalore Palace and relax in the scenic Lalbagh Botanical Garden. Visit Tipu Sultan's Summer Palace and spend a peaceful time at Cubbon Park. Experience wildlife at Bannerghatta National Park. Indulge in the flavors of Bengaluru's famous Masala Dosa, Bisi Bele Bath, and Filter Coffee. Bengaluru's cosmopolitan culture, tech-savvy crowd, and vibrant food scene will leave you amazed.",
+    "reviews": [
+      {
+        "name": "Aditya Sharma",
+        "review": "Bengaluru's pleasant weather and cosmopolitan vibe are perfect for a city escape."
+      },
+      {
+        "name": "Swati Singh",
+        "review": "Exploring the city's green spaces and trying local delicacies made my trip memorable."
+      }
+    ],
+    "mapImg": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292644485!2d72.71637190093986!3d19.08250200590925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689909549846!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  }
 ]
-
-// let data = [
-//     {
-//         "id": 1,
-//         "city": "Mumbai",
-//         "state": "Maharashtra",
-//         "population": "20,704,000",
-//         "weather": "28°C, sunny",
-//         "language": "Marathi",
-//         "images": ["https://i.ytimg.com/vi/_ly6i7g8FNA/maxresdefault.jpg", "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/Gateway-of-India.jpg", "https://images.memphistours.com/large/a18740a16cbfc72d97c819b72670a297.jpg", "https://static.toiimg.com/thumb/msid-24183773,width-1070,height-580,resizemode-75,imgsize-24183773,pt-32,y_pad-40/24183773.jpg"],
-//         "videos": ["https://www.youtube.com/watch?v=3OzOe2oDzzU"],
-//         "attractions": [
-//           "Gateway of India",
-//           "Marine Drive",
-//           "Elephanta Caves",
-//           "Siddhivinayak Temple",
-//           "Chhatrapati Shivaji Maharaj Terminus"
-//         ],
-//         "activities": [
-//           "Explore Bollywood",
-//           "Visit Juhu Beach",
-//           "Shop at Colaba Causeway",
-//           "Take a ferry to Elephanta Island",
-//           "Enjoy street food at Mohammed Ali Road"
-//         ],
-//         "food": ["Vada Pav", "Pav Bhaji", "Bombay Sandwich", "Pani Puri", "Kebabs"],
-//         "rating": 4.5,
-//         "time_to_travel": "3-4 days",
-//         "theme": "City",
-//         "blog": "Mumbai, formerly known as Bombay, is the financial and entertainment capital of India. This bustling metropolis, situated on the west coast of Maharashtra, attracts millions of visitors every year. Mumbai is a city of contrasts, where towering skyscrapers stand alongside colonial-era architecture. The iconic Gateway of India welcomes travelers to the historic harbor, while Marine Drive offers breathtaking views of the Arabian Sea. The Elephanta Caves, a UNESCO World Heritage Site, showcase ancient rock-cut temples dedicated to Lord Shiva. Mumbai's rich cultural heritage is evident in its diverse range of attractions, including the famous Siddhivinayak Temple and the magnificent Chhatrapati Shivaji Maharaj Terminus, a Victorian Gothic-style railway station. The city's vibrant energy is epitomized by its Bollywood film industry, which has given rise to the nickname 'the city of dreams.' Mumbai's culinary scene is equally diverse, offering a gastronomic delight with street food like Vada Pav, Pav Bhaji, and Pani Puri. Whether you're exploring the vibrant markets of Colaba Causeway, strolling along the sandy shores of Juhu Beach, or indulging in a thrilling boat ride to Elephanta Island, Mumbai offers a unique blend of history, culture, and modernity.",
-//         "map": "https://www.mapsofindia.com/maps/maharashtra/mumbai-map-city.jpg",
-//         "reviews": [
-//           {
-//             "name": "Ravi Deshmukh",
-//             "review": "I had a wonderful time exploring the vibrant streets of Mumbai. The iconic Gateway of India and the beautiful Marine Drive left me mesmerized. The street food at Mohammed Ali Road was a gastronomic delight. Mumbai's cultural diversity and fast-paced lifestyle make it an exciting city to visit!"
-//           },
-//           {
-//             "name": "Priya Shah",
-//             "review": "Mumbai surpassed my expectations with its incredible blend of heritage and modernity. The Elephanta Caves and the Siddhivinayak Temple were spiritual havens. The bustling markets of Colaba Causeway offered unique shopping experiences. I couldn't resist indulging in the lip-smacking Vada Pav and Pani Puri. Mumbai's vibrant energy and rich cultural heritage make it a must-visit destination!"
-//           }
-//         ]
-//       },
-//       {
-//         "id": 2,
-//         "city": "Jaipur",
-//         "state": "Rajasthan",
-//         "population": "3,073,350",
-//         "weather": "33°C, sunny",
-//         "language": "Rajasthani",
-//         "images": ["jaipur-image1.jpg", "jaipur-image2.jpg", "jaipur-image3.jpg"],
-//         "videos": ["jaipur-video1.mp4", "jaipur-video2.mp4"],
-//         "attractions": [
-//           "Amber Fort",
-//           "Hawa Mahal",
-//           "City Palace",
-//           "Jantar Mantar",
-//           "Nahargarh Fort"
-//         ],
-//         "activities": [
-//           "Elephant Ride at Amer Fort",
-//           "Explore Jaipur City Palace",
-//           "Shop at Johari Bazaar",
-//           "Witness the Rajasthani Folk Dance and Music",
-//           "Visit the Albert Hall Museum"
-//         ],
-//         "food": ["Dal Bati Churma", "Gatte Ki Sabzi", "Kachori", "Ghevar", "Laal Maas"],
-//         "rating": 4.6,
-//         "time_to_travel": "2-3 days",
-//         "theme": "City",
-//         "blog": "Jaipur, the capital city of Rajasthan, is famously known as the 'Pink City' due to the distinctive color of its buildings. This historic city is renowned for its magnificent palaces, forts, and rich cultural heritage. The grand Amber Fort, perched on a hilltop, offers breathtaking views of the surrounding landscape. Hawa Mahal, with its intricate latticework, is an architectural marvel. The opulent City Palace showcases the royal heritage of the region, while the Jantar Mantar observatory is a UNESCO World Heritage Site. Jaipur is also a shopper's paradise, with vibrant markets like Johari Bazaar offering traditional Rajasthani jewelry, textiles, and handicrafts. To immerse in the local culture, one can witness the vibrant Rajasthani folk dance and music performances. The city's cuisine is a gastronomic delight, with delicacies like Dal Bati Churma, Gatte Ki Sabzi, and the famous sweet dish, Ghevar. Jaipur's charm lies in its seamless blend of tradition and modernity, where ancient palaces coexist with bustling markets and modern infrastructure. A visit to Jaipur is an enchanting journey back in time.",
-//         "map": "jaipur-map.jpg",
-//         "reviews": [
-//           {
-//             "name": "Anita Sharma",
-//             "review": "My trip to Jaipur was a mesmerizing experience. The opulence of the City Palace and the fascinating architecture of Hawa Mahal were truly captivating. The Elephant Ride at Amer Fort was a unique and memorable adventure. Jaipur's rich culture, warm hospitality, and delectable Rajasthani cuisine made it an unforgettable trip!"
-//           },
-//           {
-//             "name": "Rajesh Singh",
-//             "review": "Jaipur's rich cultural heritage left me spellbound. The intricate carvings at the Amber Fort and the awe-inspiring Jantar Mantar were architectural marvels. Exploring the bustling Johari Bazaar and indulging in the flavorsome Dal Bati Churma were highlights of my trip. Jaipur's vibrant colors and royal charm make it a must-visit destination!"
-//           }
-//         ]
-//       },
-//       {
-//         "id": 3,
-//         "city": "Delhi",
-//         "state": "Delhi",
-//         "population": "18,980,000",
-//         "weather": "30°C, mostly sunny",
-//         "language": "Hindi",
-//         "images": ["delhi-image1.jpg", "delhi-image2.jpg", "delhi-image3.jpg"],
-//         "videos": ["delhi-video1.mp4", "delhi-video2.mp4"],
-//         "attractions": [
-//           "Red Fort",
-//           "India Gate",
-//           "Qutub Minar",
-//           "Lotus Temple",
-//           "Humayun's Tomb"
-//         ],
-//         "activities": [
-//           "Explore Old Delhi",
-//           "Visit Akshardham Temple",
-//           "Shop at Chandni Chowk",
-//           "Enjoy a boat ride on the Yamuna River",
-//           "Experience the light and sound show at Red Fort"
-//         ],
-//         "food": ["Parathas", "Butter Chicken", "Chaat", "Kebabs", "Biryani"],
-//         "rating": 4.3,
-//         "time_to_travel": "2-3 days",
-//         "theme": "City",
-//         "blog": "Delhi, the capital city of India, is a vibrant blend of history, culture, and modernity. The city is known for its iconic landmarks and historical sites that reflect its rich past. The majestic Red Fort, a UNESCO World Heritage Site, stands as a symbol of India's independence. The India Gate war memorial and the towering Qutub Minar are must-visit attractions. Delhi's spiritual side is evident in the serene Lotus Temple and the historic Humayun's Tomb. The city offers a range of activities, from exploring the narrow lanes of Old Delhi to visiting the magnificent Akshardham Temple. Shopaholics can indulge in the bustling markets of Chandni Chowk, while nature enthusiasts can enjoy a boat ride on the Yamuna River. Delhi's culinary scene is a delight for food lovers, with mouthwatering dishes like Parathas, Butter Chicken, and Chaat. The city's diverse culture and architectural wonders make it a fascinating destination to explore.",
-//         "map": "delhi-map.jpg",
-//         "reviews": [
-//           {
-//             "name": "Amit Gupta",
-//             "review": "Exploring Delhi was an incredible experience. The Red Fort's grandeur and the peacefulness of Lotus Temple left me in awe. Old Delhi's bustling streets and the flavorsome Parathas were unforgettable. Delhi's rich history, vibrant culture, and delectable cuisine make it a city like no other!"
-//           },
-//           {
-//             "name": "Neha Verma",
-//             "review": "Delhi's historical marvels, like Qutub Minar and Humayun's Tomb, left me speechless. The boat ride on the Yamuna River offered a tranquil escape from the city's hustle and bustle. The light and sound show at Red Fort was a captivating experience. Delhi's diverse culinary scene, with its aromatic Kebabs and flavorful Biryani, made my visit even more memorable!"
-//           }
-//         ]
-//       },
-//       {
-//         "id": 4,
-//         "city": "Agra",
-//         "state": "Uttar Pradesh",
-//         "population": "1,686,976",
-//         "weather": "32°C, sunny",
-//         "language": "Hindi",
-//         "images": ["agra-image1.jpg", "agra-image2.jpg", "agra-image3.jpg"],
-//         "videos": ["agra-video1.mp4", "agra-video2.mp4"],
-//         "attractions": [
-//           "Taj Mahal",
-//           "Agra Fort",
-//           "Fatehpur Sikri",
-//           "Itmad-Ud-Daulah's Tomb",
-//           "Mehtab Bagh"
-//         ],
-//         "activities": [
-//           "Visit the Taj Mahal at sunrise",
-//           "Explore the grand Agra Fort",
-//           "Discover the ancient city of Fatehpur Sikri",
-//           "Admire the beauty of Itmad-Ud-Daulah's Tomb",
-//           "Enjoy a sunset view at Mehtab Bagh"
-//         ],
-//         "food": ["Petha", "Agra Ka Dalmoth", "Mughlai Cuisine", "Bedai and Jalebi", "Makkhan"],
-//         "rating": 4.7,
-//         "time_to_travel": "1-2 days",
-//         "theme": "Historical",
-//         "blog": "Agra, the city of the iconic Taj Mahal, is a testament to India's rich Mughal history. The Taj Mahal, one of the Seven Wonders of the World, stands as a symbol of eternal love and architectural brilliance. The magnificent Agra Fort, a UNESCO World Heritage Site, showcases the grandeur of Mughal architecture. Fatehpur Sikri, an abandoned city nearby, offers a glimpse into the past with its well-preserved structures. Agra is also known for its exquisite marble craftsmanship and intricate inlay work. The Itmad-Ud-Daulah's Tomb, often referred to as the 'Baby Taj,' is another architectural gem worth exploring. Mehtab Bagh, a garden complex on the banks of the Yamuna River, provides a stunning view of the Taj Mahal during sunset. A visit to Agra is incomplete without indulging in its culinary delights, such as the famous Petha and Agra Ka Dalmoth. The city's Mughlai cuisine, with its aromatic spices and rich flavors, is a treat for the taste buds. Agra's historical significance and the mesmerizing beauty of the Taj Mahal make it a must-visit destination for history and architecture enthusiasts.",
-//         "map": "agra-map.jpg",
-//         "reviews": [
-//           {
-//             "name": "Amit Verma",
-//             "review": "The Taj Mahal at sunrise was a sight that took my breath away. Exploring the Agra Fort and learning about its historical significance was truly fascinating. Agra's rich Mughal heritage, the delectable Bedai and Jalebi, and the warm hospitality of the locals made my visit to the city a memorable one!"
-//           },
-//           {
-//             "name": "Neha Singh",
-//             "review": "Agra's architectural marvels, including the Taj Mahal and Itmad-Ud-Daulah's Tomb, left me in awe. The flavors of Agra's Mughlai cuisine were a gastronomic delight. The sunset view of the Taj Mahal from Mehtab Bagh was a magical experience. Agra's historical grandeur and cultural richness make it a city worth visiting!"
-//           }
-//         ]
-//       },
-//       {
-//         "id": 5,
-//         "city": "Kolkata",
-//         "state": "West Bengal",
-//         "population": "14,850,000",
-//         "weather": "27°C, mostly cloudy",
-//         "language": "Bengali",
-//         "images": ["kolkata-image1.jpg", "kolkata-image2.jpg", "kolkata-image3.jpg"],
-//         "videos": ["kolkata-video1.mp4", "kolkata-video2.mp4"],
-//         "attractions": [
-//           "Victoria Memorial",
-//           "Howrah Bridge",
-//           "Dakshineswar Kali Temple",
-//           "Indian Museum",
-//           "Eden Gardens"
-//         ],
-//         "activities": [
-//           "Take a Tram Ride",
-//           "Explore College Street Book Market",
-//           "Indulge in Bengali Cuisine",
-//           "Visit Kalighat Temple",
-//           "Enjoy a boat ride on the Hooghly River"
-//         ],
-//         "food": ["Rosogolla", "Misti Doi", "Kathi Rolls", "Macher Jhol", "Puchka"],
-//         "rating": 4.4,
-//         "time_to_travel": "2-3 days",
-//         "theme": "City",
-//         "blog": "Kolkata, the cultural capital of India, is known for its rich history, literature, and artistic heritage. The city's colonial past is reflected in its architecture, with notable landmarks like the Victoria Memorial and the iconic Howrah Bridge. Kolkata is also a hub of religious significance, with the Dakshineswar Kali Temple drawing devotees from all over the country. The Indian Museum, one of the oldest museums in Asia, houses a vast collection of art and artifacts. Sports enthusiasts can witness the electric atmosphere at the iconic Eden Gardens cricket stadium. Kolkata's vibrant street life is best experienced through a tram ride, while the College Street Book Market is a paradise for book lovers. Indulging in the city's delectable Bengali cuisine, including the famous Rosogolla and Kathi Rolls, is a must-do. Kolkata's festive spirit comes alive during Durga Puja, a grand celebration that showcases the city's cultural heritage. A boat ride on the Hooghly River offers a serene escape from the bustling city. Kolkata's intellectual and artistic pursuits, warm hospitality, and culinary delights make it a captivating destination for travelers.",
-//         "map": "kolkata-map.jpg",
-//         "reviews": [
-//           {
-//             "name": "Rajesh Gupta",
-//             "review": "I had a wonderful time exploring the vibrant streets of Kolkata. The Howrah Bridge was a sight to behold, and the Victoria Memorial showcased the city's rich history. The tram ride through the bustling lanes was an unforgettable experience. The local cuisine, especially the Rosogolla and Misti Doi, left me craving for more. The warmth and hospitality of the people of Kolkata made my visit even more memorable. I highly recommend visiting this cultural gem!"
-//           },
-//           {
-//             "name": "Priya Patel",
-//             "review": "Kolkata surpassed my expectations with its incredible blend of heritage and modernity. The Dakshineswar Kali Temple was a spiritual oasis, and the College Street Book Market was a paradise for book lovers. The bustling atmosphere, the aroma of street food, and the joy of exploring the city on a tram added to the charm. I couldn't resist indulging in the famous Kathi Rolls, and they were absolutely delicious. Kolkata's rich cultural heritage and warm people make it a must-visit destination."
-//           }
-//         ]
-//       },
-//       {
-//         "id": 6,
-//         "city": "Chennai",
-//         "state": "Tamil Nadu",
-//         "population": "7,088,000",
-//         "weather": "31°C, mostly sunny",
-//         "language": "Tamil",
-//         "images": ["chennai-image1.jpg", "chennai-image2.jpg", "chennai-image3.jpg"],
-//         "videos": ["chennai-video1.mp4", "chennai-video2.mp4"],
-//         "attractions": [
-//           "Marina Beach",
-//           "Kapaleeshwarar Temple",
-//           "Fort St. George",
-//           "San Thome Basilica",
-//           "Government Museum"
-//         ],
-//         "activities": [
-//           "Relax at Marina Beach",
-//           "Explore Mahabalipuram",
-//           "Visit the Theosophical Society",
-//           "Experience the culinary delights of Mylapore",
-//           "Watch a classical dance performance"
-//         ],
-//         "food": ["Dosa", "Filter Coffee", "Chettinad Cuisine", "Pongal", "Biryani"],
-//         "rating": 4.2,
-//         "time_to_travel": "2-3 days",
-//         "theme": "City",
-//         "blog": "Chennai, the capital city of Tamil Nadu, is a vibrant metropolis that beautifully showcases the rich cultural heritage of South India. The city is known for its pristine beaches, religious landmarks, and traditional arts. Marina Beach, one of the longest urban beaches in the world, offers a serene and refreshing escape. The Kapaleeshwarar Temple, dedicated to Lord Shiva, is a magnificent example of Dravidian architecture. Fort St. George, built during the British colonial era, is home to several historic buildings and the famous St. Mary's Church. San Thome Basilica, a pilgrimage site, is believed to be the final resting place of Saint Thomas the Apostle. The Government Museum is a treasure trove of artifacts that provide insights into the region's rich history and culture. Chennai's culinary scene is a delight for food lovers, with popular dishes like crispy Dosas, aromatic Filter Coffee, and flavorful Chettinad cuisine. Exploring the vibrant neighborhood of Mylapore and witnessing a classical dance performance are experiences that immerse visitors in the local culture. Chennai's warm hospitality, traditional arts, and culinary delights make it a captivating destination for travelers.",
-//         "map": "chennai-map.jpg",
-//         "reviews": [
-//           {
-//             "name": "Saravanan Raju",
-//             "review": "Chennai's Marina Beach left me mesmerized with its vast expanse and calming waves. The Kapaleeshwarar Temple's architectural beauty and the divine ambiance were awe-inspiring. Exploring the historical Fort St. George and experiencing the flavors of authentic South Indian cuisine were memorable highlights of my trip. Chennai's rich culture and friendly people make it a city worth visiting!"
-//           },
-//           {
-//             "name": "Lakshmi Ranganathan",
-//             "review": "Chennai's cultural heritage and artistic traditions left a lasting impression on me. The San Thome Basilica's serene atmosphere and the Government Museum's vast collection of artifacts were fascinating. The flavors of Chennai's iconic Dosas and aromatic Filter Coffee were a culinary delight. Witnessing a classical dance performance was a beautiful experience. Chennai's vibrant energy and rich cultural offerings make it a must-visit destination!"
-//           }
-//         ]
-//       },
-//       {
-//         "id": 7,
-//         "city": "Bangalore",
-//         "state": "Karnataka",
-//         "population": "12,476,447",
-//         "weather": "29°C, partly cloudy",
-//         "language": "Kannada",
-//         "images": ["bangalore-image1.jpg", "bangalore-image2.jpg", "bangalore-image3.jpg"],
-//         "videos": ["bangalore-video1.mp4", "bangalore-video2.mp4"],
-//         "attractions": [
-//           "Lalbagh Botanical Garden",
-//           "Bangalore Palace",
-//           "ISKCON Temple",
-//           "Cubbon Park",
-//           "Tipu Sultan's Summer Palace"
-//         ],
-//         "activities": [
-//           "Explore the vibrant neighborhoods of Indiranagar and Koramangala",
-//           "Visit the innovative Visvesvaraya Industrial and Technological Museum",
-//           "Experience the nightlife at MG Road and Brigade Road",
-//           "Go on a shopping spree at Commercial Street",
-//           "Take a trip to Nandi Hills for a scenic view"
-//         ],
-//         "food": ["Masala Dosa", "Mangalorean Cuisine", "Filter Coffee", "Biryani", "Pub Culture"],
-//         "rating": 4.4,
-//         "time_to_travel": "2-3 days",
-//         "theme": "City",
-//         "blog": "Bangalore, often referred to as the 'Silicon Valley of India,' is a bustling cosmopolitan city that seamlessly blends its rich history with modernity. The city is known for its pleasant climate, lush green spaces, and vibrant culture. The Lalbagh Botanical Garden, with its sprawling flower beds and majestic glasshouse, is a haven for nature lovers. Bangalore Palace, inspired by England's Windsor Castle, offers a glimpse into the city's regal past. The ISKCON Temple, dedicated to Lord Krishna, is a serene retreat that attracts devotees and spiritual seekers. Cubbon Park, spread over 300 acres, is an oasis of tranquility in the heart of the city. Tipu Sultan's Summer Palace is a magnificent example of Indo-Islamic architecture. Bangalore's dynamic neighborhoods like Indiranagar and Koramangala are known for their trendy cafes, restaurants, and shopping boutiques. The city's culinary scene is diverse, with iconic dishes like Masala Dosa, flavorful Mangalorean cuisine, and aromatic Filter Coffee. Bangalore's vibrant nightlife, with its popular hangout spots like MG Road and Brigade Road, offers a lively experience. Nature enthusiasts can take a day trip to Nandi Hills for a breathtaking view of the sunrise or sunset. Bangalore's thriving IT industry, green spaces, and cultural offerings make it a city of endless possibilities.",
-//         "map": "bangalore-map.jpg",
-//         "reviews": [
-//           {
-//             "name": "Arun Kumar",
-//             "review": "Exploring Bangalore was an incredible experience. The Lalbagh Botanical Garden's serene beauty and the historical Bangalore Palace were mesmerizing. Indulging in the city's culinary delights, like the crispy Masala Dosa and aromatic Filter Coffee, was a gastronomic delight. Bangalore's vibrant culture, energetic vibe, and friendly people make it a city that I would love to visit again!"
-//           },
-//           {
-//             "name": "Deepika Rao",
-//             "review": "Bangalore's green spaces, like Cubbon Park, offered a refreshing escape from the city's hustle and bustle. The vibrant neighborhoods of Indiranagar and Koramangala were a delight to explore. Shopping at Commercial Street and experiencing the city's lively nightlife were unforgettable. Bangalore's blend of technology and nature, coupled with its rich culinary scene, make it a city worth exploring!"
-//           }
-//         ]
-//       },
-//       {
-//         "id": 8,
-//         "city": "Hyderabad",
-//         "state": "Telangana",
-//         "population": "6,809,970",
-//         "weather": "32°C, mostly sunny",
-//         "language": "Telugu",
-//         "images": ["hyderabad-image1.jpg", "hyderabad-image2.jpg", "hyderabad-image3.jpg"],
-//         "videos": ["hyderabad-video1.mp4", "hyderabad-video2.mp4"],
-//         "attractions": [
-//           "Charminar",
-//           "Golconda Fort",
-//           "Hussain Sagar Lake",
-//           "Ramoji Film City",
-//           "Salar Jung Museum"
-//         ],
-//         "activities": [
-//           "Taste the famous Hyderabadi Biryani",
-//           "Shop for traditional bangles at Laad Bazaar",
-//           "Explore the grand Chowmahalla Palace",
-//           "Visit the iconic Qutb Shahi Tombs",
-//           "Take a boat ride on Hussain Sagar Lake"
-//         ],
-//         "food": ["Hyderabadi Biryani", "Haleem", "Dum Pukht", "Irani Chai", "Osmania Biscuits"],
-//         "rating": 4.3,
-//         "time_to_travel": "2-3 days",
-//         "theme": "City",
-//         "blog": "Hyderabad, the 'City of Pearls,' is a captivating blend of history, tradition, and modernity. The iconic Charminar, with its exquisite architecture and bustling markets, is a symbol of Hyderabad's rich heritage. Golconda Fort, known for its acoustics and stunning views, offers a glimpse into the city's glorious past. The Hussain Sagar Lake, adorned with the iconic Buddha statue, is a serene spot for boating and leisurely walks. Ramoji Film City, one of the largest film studios in the world, provides a behind-the-scenes experience of the Indian film industry. The Salar Jung Museum houses an extensive collection of art, artifacts, and antiques, showcasing the cultural heritage of the region. Hyderabad is renowned for its delectable cuisine, with the world-famous Hyderabadi Biryani taking center stage. Haleem, Dum Pukht, Irani Chai, and Osmania Biscuits are other must-try delicacies. Exploring the vibrant markets of Laad Bazaar for traditional bangles and visiting the grand Chowmahalla Palace are experiences that immerse visitors in the city's cultural fabric. Hyderabad's warm hospitality, rich history, and mouthwatering cuisine make it a city that truly delights the senses.",
-//         "map": "hyderabad-map.jpg",
-//         "reviews": [
-//           {
-//             "name": "Ramesh Reddy",
-//             "review": "Hyderabad's Charminar and Golconda Fort were architectural marvels that left me awe-struck. Tasting the flavorsome Hyderabadi Biryani was a culinary delight. Exploring the vibrant markets of Laad Bazaar and the grandeur of Chowmahalla Palace were unforgettable experiences. Hyderabad's cultural richness and warm hospitality make it a city that I would love to visit again!"
-//           },
-//           {
-//             "name": "Priya Kumar",
-//             "review": "Hyderabad's serene Hussain Sagar Lake and the tranquil boat ride were truly rejuvenating. Ramoji Film City's behind-the-scenes experience and the Salar Jung Museum's vast collection of art were highlights of my trip. The city's mouthwatering Haleem and Irani Chai added to the gastronomic delight. Hyderabad's rich heritage and warm people make it a city that should not be missed!"
-//           }
-//         ]
-//       },
-//       {
-//         "id": 9,
-//         "city": "Pune",
-//         "state": "Maharashtra",
-//         "population": "3,124,458",
-//         "weather": "29°C, partly cloudy",
-//         "language": "Marathi",
-//         "images": ["pune-image1.jpg", "pune-image2.jpg", "pune-image3.jpg"],
-//         "videos": ["pune-video1.mp4", "pune-video2.mp4"],
-//         "attractions": [
-//           "Aga Khan Palace",
-//           "Shaniwar Wada",
-//           "Sinhagad Fort",
-//           "Dagadusheth Halwai Ganpati Temple",
-//           "Raja Dinkar Kelkar Museum"
-//         ],
-//         "activities": [
-//           "Explore the vibrant streets of Koregaon Park",
-//           "Trek to the scenic hills of Sinhagad",
-//           "Visit the picturesque Pataleshwar Cave Temple",
-//           "Indulge in local street food at FC Road",
-//           "Witness the lively atmosphere at the Shaniwar Wada Fort Light and Sound Show"
-//         ],
-//         "food": ["Misal Pav", "Bakarwadi", "Puneri Misal", "Mastani", "Sabudana Khichdi"],
-//         "rating": 4.2,
-//         "time_to_travel": "1-2 days",
-//         "theme": "City",
-//         "blog": "Pune, the 'Oxford of the East,' is a vibrant city known for its educational institutions, historical landmarks, and cultural heritage. The Aga Khan Palace, with its serene gardens, stands as a symbol of India's freedom struggle. Shaniwar Wada, a grand fort of the Maratha Empire, showcases the city's rich history. The Sinhagad Fort, located atop scenic hills, offers breathtaking views of the surrounding landscape. The Dagadusheth Halwai Ganpati Temple is a popular pilgrimage site, attracting devotees from all over the country. The Raja Dinkar Kelkar Museum houses a diverse collection of artifacts, including traditional Indian art and handicrafts. Pune's vibrant neighborhoods, like Koregaon Park, offer a blend of cafes, boutiques, and a lively atmosphere. The city's culinary scene is diverse, with mouthwatering dishes like Misal Pav, Bakarwadi, and Puneri Misal. Pune is also famous for its refreshing Mastani, a thick milkshake topped with ice cream, and the delightful Sabudana Khichdi. Exploring the picturesque Pataleshwar Cave Temple and witnessing the Shaniwar Wada Fort Light and Sound Show are experiences that immerse visitors in the city's cultural fabric. Pune's youthful energy, educational institutions, and historical charm make it a city that caters to a range of interests.",
-//         "map": "pune-map.jpg",
-//         "reviews": [
-//           {
-//             "name": "Amit Deshmukh",
-//             "review": "Pune's Aga Khan Palace and its historical significance were truly captivating. Exploring the vibrant streets of Koregaon Park and indulging in the city's famous Misal Pav were highlights of my trip. Pune's youthful vibe, cultural heritage, and warm hospitality make it a city that I would love to visit again!"
-//           },
-//           {
-//             "name": "Neha Shah",
-//             "review": "Pune's scenic beauty and the trek to Sinhagad Fort offered a rejuvenating experience. The peaceful ambiance of the Pataleshwar Cave Temple and the delightful Mastani were memorable. Witnessing the Shaniwar Wada Fort Light and Sound Show was a unique and immersive experience. Pune's blend of history, natural beauty, and culinary delights make it a city worth exploring!"
-//           }
-//         ]
-//       },
-//       {
-//         "id": 10,
-//         "city": "Ahmedabad",
-//         "state": "Gujarat",
-//         "population": "7,650,000",
-//         "weather": "35°C, sunny",
-//         "language": "Gujarati",
-//         "images": ["ahmedabad-image1.jpg", "ahmedabad-image2.jpg", "ahmedabad-image3.jpg"],
-//         "videos": ["ahmedabad-video1.mp4", "ahmedabad-video2.mp4"],
-//         "attractions": [
-//           "Sabarmati Ashram",
-//           "Jama Masjid",
-//           "Kankaria Lake",
-//           "Adalaj Stepwell",
-//           "Sidi Saiyyed Mosque"
-//         ],
-//         "activities": [
-//           "Explore the heritage houses of the Pols",
-//           "Visit the Calico Museum of Textiles",
-//           "Indulge in Gujarati street food at Manek Chowk",
-//           "Witness the iconic kite festival during Uttarayan",
-//           "Take a heritage walk in the old city"
-//         ],
-//         "food": ["Dhokla", "Khandvi", "Gujarati Thali", "Fafda Jalebi", "Undhiyu"],
-//         "rating": 4.2,
-//         "time_to_travel": "2-3 days",
-//         "theme": "City",
-//         "blog": "Ahmedabad, the largest city in Gujarat, is a bustling metropolis with a rich cultural heritage. The Sabarmati Ashram, once the residence of Mahatma Gandhi, is a place of historical significance and introspection. Jama Masjid, with its splendid architecture, stands as a symbol of Ahmedabad's Islamic heritage. The serene Kankaria Lake is a popular spot for leisure activities and entertainment. The Adalaj Stepwell, an architectural marvel, showcases the city's intricate craftsmanship. The Sidi Saiyyed Mosque, known for its beautiful lattice work, is a testament to the city's architectural prowess. Ahmedabad's heritage houses in the Pols, characterized by their unique architectural style, offer a glimpse into the city's vibrant past. The Calico Museum of Textiles is a treasure trove of handcrafted textiles and artifacts. Ahmedabad is also renowned for its mouthwatering Gujarati cuisine, featuring delicacies like Dhokla, Khandvi, and the traditional Gujarati Thali. Indulging in Gujarati street food at Manek Chowk and witnessing the vibrant kite festival during Uttarayan are experiences that immerse visitors in the city's cultural fabric. Ahmedabad's warm hospitality, cultural diversity, and architectural marvels make it a city that is both enriching and enjoyable.",
-//         "map": "ahmedabad-map.jpg",
-//         "reviews": [
-//           {
-//             "name": "Rahul Patel",
-//             "review": "Ahmedabad's Sabarmati Ashram and its historical significance were truly inspiring. Exploring the heritage houses of the Pols and indulging in the city's delectable street food at Manek Chowk were highlights of my trip. Ahmedabad's cultural diversity, architectural wonders, and warm people make it a city that I would love to visit again!"
-//           },
-//           {
-//             "name": "Pooja Shah",
-//             "review": "Ahmedabad's architectural marvels, like the Adalaj Stepwell and the Sidi Saiyyed Mosque, left me spellbound. The Kankaria Lake and its serene ambiance were rejuvenating. The city's vibrant culture, colorful kite festival, and mouthwatering Gujarati Thali make it a destination that offers a delightful experience for all."
-//           }
-//         ]
-//     }
-// ]
 
 let mainSection = document.querySelector("#ln-main-section");
 
