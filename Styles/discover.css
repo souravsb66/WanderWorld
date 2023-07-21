@@ -4,39 +4,55 @@
     box-sizing: border-box;
 }
 #pagiContainer{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 .cardlist{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
 
 .card{
-    text-align: justify;
     line-height: 1.5;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 30px;
     border-radius: 10px;
     border: 2px solid lightgrey;
-    
 }
 .imageDiv{
     overflow: hidden;
 }
 
+.cardBody{
+    padding: 10px;
+
+}
 .card img{
-    width: 100%;
+    width:100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: 0.3s;
 }
-
+.h1{
+    font-size: 24px;
+}
 .card img:hover{
     transform: scale(1.2);
 }
-
+.divLoc{
+    display: flex;
+    align-items: center;
+    
+}
+.fa-location-dot{
+    margin-right: 10px;
+}
+.location{
+    font-size: 1.2rem;
+    color: rebeccapurple;
+}
 #pagination{
     text-align: center;
 }
@@ -55,6 +71,7 @@
     transform: scale(1.1);
     background-color: lightgrey;
 }
+
 .h1{
     margin-bottom: 10px;
 }
@@ -63,9 +80,57 @@
     transition: 0.3s;
 }
 p{
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     margin-bottom: 10px;
 }
-.readMore{
-    align-items: center;
+.cardlist{
+    position: relative;
+}
+
+.cardBody{
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+}
+.card.active .cardBody{
+    height: auto;
+
+}
+.card.active .cardBody::before{
+    display: none;
+}
+.cardBody::before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100px;
+background: linear-gradient(transparent,#3f3f3fa1);
+}
+
+.read{
+    position: relative;
+    padding: 10px 12px;
+    background: #10d681;
+    background: rgba(62, 168, 255, 0.76);
+    margin-top: 15px;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 1.5;
+    margin-bottom: 12px;
+
+}
+
+.card.active .read{
+    background: #ff3b7e;
+}
+
+.card .read::before{
+    content: 'READ MORE';
+}
+.card.active .read::before{
+    content: 'READ LESS';
 }
