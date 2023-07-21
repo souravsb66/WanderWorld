@@ -76,15 +76,18 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 15px 0;
 }
 
-.header-left-items {
-    margin-left: 50px;
-}
+@media screen and (min-width: 1200px) {
+    .header-left-items {
+        margin-left: 50px;
+        padding: 15px;
+    }
 
-.header-right-items {
-    margin-right: 50px;
+    .header-right-items {
+        margin-right: 50px;
+        padding: 15px;
+    }
 }
 
 header > .header-right-items > nav > ul {
