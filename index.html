@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/index.css">
+    <!-- <link rel="stylesheet" href="components/card/card.css"> -->
     <link rel="stylesheet" href="Styles/home.css">
     <title>WanderWorld</title>
 </head>
@@ -69,7 +70,7 @@
 
             <div id="discount">
                 <p>Discount on new bookings</p>
-                <p>3Hrs 32 Min 07 Sec</p>
+                <p><span id="hrs"></span>Hrs<span id="mins"></span>Min<span id="secs"></span>Sec</p>
             </div>
 
             <div id="blogroll">
@@ -129,6 +130,145 @@
             </div>
         </section>
     </div>
+
+    <section id="popular">
+
+        <div id="popheader"><h2>Popular Places to Visit</h2></div>
+        
+            <div class="card-container">
+                <div class="card-image">
+                    <img src="/assets/images/blog1.jpg" alt="">
+                </div>
+                <div class="card-description">
+                        <p class="title">Italy</p>
+                        <p class="rating">
+                            <span>4.5</span> 
+                            <span class="stars">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star-half fa-xs"></i>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="location">Mazandaran</span>
+                        </p>
+                        <p class="duration">1 day</p>
+                </div>
+                <div class="card-bookmark">
+                    <button>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <div id="long-card" class="card-container">
+                <div class="card-image">
+                    <img src="/assets/images/blog2.jpg" alt="">
+                </div>
+                <div class="card-description">
+                        <p class="title">Italy</p>
+                        <p class="rating">
+                            <span>4.5</span> 
+                            <span class="stars">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star-half fa-xs"></i>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="location">Mazandaran</span>
+                        </p>
+                        <p class="duration">1 day</p>
+                </div>
+                <div class="card-bookmark">
+                    <button>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="card-container">
+                <div class="card-image">
+                    <img src="/assets/images/blog1.jpg" alt="">
+                </div>
+                <div class="card-description">
+                        <p class="title">Italy</p>
+                        <p class="rating">
+                            <span>4.5</span> 
+                            <span class="stars">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star-half fa-xs"></i>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="location">Mazandaran</span>
+                        </p>
+                        <p class="duration">1 day</p>
+                </div>
+                <div class="card-bookmark">
+                    <button>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <div class="card-container">
+                <div class="card-image">
+                    <img src="/assets/images/blog1.jpg" alt="">
+                </div>
+                <div class="card-description">
+                        <p class="title">Italy</p>
+                        <p class="rating">
+                            <span>4.5</span> 
+                            <span class="stars">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star-half fa-xs"></i>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="location">Mazandaran</span>
+                        </p>
+                        <p class="duration">1 day</p>
+                </div>
+                <div class="card-bookmark">
+                    <button>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        
+        
+    </section>
+
+    <section id="summerspecial">
+        <div class="summerspecialcontainer">
+            <div class="summerspecialimage">
+                
+            </div>
+            <div class="summerspecialtext">
+                <p>Summer Special</p>
+                <h2>Upto 25% Off</h2>
+                <p>Spend the best vacation with us</p>
+                <p>THE NIGHTS OF THAILAND</p>
+                <a href="./locations.html">Book Now</a>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <!-- Newsletter section -->
@@ -215,4 +355,5 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="Scripts/main.js" type="module"></script>
+<script src="Scripts/countdown.js"></script>
 </html>
