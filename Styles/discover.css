@@ -1,64 +1,77 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#pagiContainer{
+
+#pagiContainer {
     width: 90%;
     margin: auto;
 }
 
-.cardlist{
+.cardlist {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    /*  */
+    position: relative;
 }
 
-.card{
+.card {
     line-height: 1.5;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     border: 2px solid lightgrey;
-}
-.imageDiv{
+    /*  */
+    transition: height 0.3s;
     overflow: hidden;
 }
 
-.cardBody{
+.imageDiv {
+    overflow: hidden;
+}
+
+.cardBody {
     padding: 10px;
 
 }
-.card img{
-    width:100%;
+
+.card img {
+    width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: 0.3s;
 }
-.h1{
+
+.h1 {
     font-size: 24px;
 }
-.card img:hover{
+
+.card img:hover {
     transform: scale(1.2);
+    border-radius: 10px 10px;
 }
-.divLoc{
+
+.divLoc {
     display: flex;
     align-items: center;
-    
 }
-.fa-location-dot{
+
+.fa-location-dot {
     margin-right: 10px;
 }
-.location{
+
+.location {
     font-size: 1.2rem;
     color: rebeccapurple;
 }
-#pagination{
+
+#pagination {
     text-align: center;
 }
 
-.pagination-button{
-    
+.pagination-button {
     font-size: 1.5rem;
     width: 30px;
     height: 30px;
@@ -67,49 +80,78 @@
     border-radius: 5px;
 }
 
-.pagination-button:hover{
+.pagination-button:hover {
     transform: scale(1.1);
     background-color: lightgrey;
 }
 
-.h1{
+.h1 {
     margin-bottom: 10px;
 }
-.h1:hover{
-    color: rgb(62,168,255);
+
+.h1:hover {
+    color: rgb(62, 168, 255);
     transition: 0.3s;
 }
-p{
-    /* font-size: 1.3rem; */
+
+p {
     margin-bottom: 10px;
 }
-.cardlist{
+
+.cardlist {
     position: relative;
 }
 
-.cardBody{
+.cardBody {
     position: relative;
     height: 270px;
     overflow: hidden;
 }
-.card.active .cardBody{
-    height: auto;
+/*  */
+.card.active{
+    height: 600px;
+    /* height: auto; */
+    width: 70%;
+    margin: auto;
+    /* position: absolute; */
+    position: fixed;
+    z-index: 2;
+    width: 50%;
+    overflow: auto;
+    left: 26%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
-.card.active .cardBody::before{
+
+.o .act{
+    /* filter: blur(10px); */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    z-index: 999;
+}
+.card.active .cardBody {
+    height: auto;
+    position: relative;
+ 
+}
+
+.card.active .cardBody::before {
     display: none;
 }
+
 .cardBody::before {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100px;
-background: linear-gradient(transparent,#3f3f3fa1);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+
 }
 
-.read{
+.read {
     position: relative;
     padding: 10px 12px;
     background: #10d681;
@@ -124,13 +166,56 @@ background: linear-gradient(transparent,#3f3f3fa1);
 
 }
 
-.card.active .read{
+.card.active .read {
     background: #ff3b7e;
 }
 
-.card .read::before{
+.card .read::before {
     content: 'READ MORE';
 }
-.card.active .read::before{
+
+.card.active .read::before {
     content: 'READ LESS';
+}
+
+@media screen and (min-width:300px) and (max-width:599px) {
+    .cardlist {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .card.active{
+        margin: auto;
+        position: fixed;
+        z-index: 2;
+        width: 75%;
+        overflow: auto;
+        left: 13%;
+        right: 50%;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    } 
+
+}
+
+@media screen and (min-width:600px) and (max-width:1000px) {
+    .cardlist {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .card.active{
+        height: 600px;
+        /* height: auto; */
+        /* width: 70%; */
+        margin: auto;
+        /* position: absolute; */
+        position: fixed;
+        z-index: 2;
+        width: 72%;
+        overflow: auto;
+        left: 13%;
+    
+    }
 }
