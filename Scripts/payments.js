@@ -44,3 +44,34 @@ $(document).ready(function(){
     });
 
 })
+
+
+let pay_first_card = document.querySelector("#pay_first_card");
+let pay_second_card = document.querySelector("#pay_second_card");
+let pay_third_card = document.querySelector("#pay_third_card");
+
+let card1 =  document.querySelector("#tab4");
+let card2 =  document.querySelector("#tab5");
+let card3 =  document.querySelector("#tab6");
+
+let pay_amount = document.querySelector("#pay_amount");
+
+card1.addEventListener("click",()=>{
+pay_amount.innerText = pay_first_card.innerText;
+});
+
+
+card2.addEventListener("click",()=>{
+pay_amount.innerText = pay_second_card.innerText;
+});
+
+card3.addEventListener("click",()=>{
+pay_amount.innerText = pay_third_card.innerText;
+});
+
+
+
+
+// card2.addEventListener('click', myFunction, false);
+
+
