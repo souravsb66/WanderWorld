@@ -22,7 +22,7 @@
     border-radius: 10px;
 }
 
-#ld-city-image {
+.ld-city-image {
     width: 100%;
     border-radius: 8px 0 0 0;
 }
@@ -36,11 +36,11 @@
 .ld-city-map {
     width: 200px;
     height: 200px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     margin-left: 10px;
 }
 
-.ld-city-map > iframe {
+.ld-city-map > img {
     /* border: 1px solid black; */
     width: 100%;
     height: 100%;
@@ -57,4 +57,74 @@
     font-size: 16px;
     color: #494949;
     font-style: italic;
+    margin-bottom: 20px;
+}
+
+#ld-city-attractions {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#ld-city-attractions > img {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#ld-city-activities-food {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+
+    /* border: 1px solid black; */
+}
+#ld-city-activities-food > div {
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px -7px #c9dff0;
+}
+#ld-city-activities-food > div > h3 {
+    margin-bottom: 10px;
+}
+#ld-city-activities-food > div > ul {
+    list-style: none;
+}
+#ld-city-activities-food > div > ul > li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.ld-btn {
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border: none;
+    background-color: #43A1FF;
+    position: fixed;
+    cursor: pointer;
+    z-index: 100;
+}
+.ld-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.ld-btn:active {
+    transform: scale(0.95);
+}
+
+#id-city-book-btn {
+    right: 50px;
+    bottom: 50px;
+}
+#ld-city-back-btn {
+    right: 180px;
+    bottom: 50px;
 }
