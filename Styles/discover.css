@@ -7,6 +7,8 @@
 #pagiContainer {
     width: 90%;
     margin: auto;
+    margin-top: 20px;
+    /* display: block; */
 }
 
 .cardlist {
@@ -84,7 +86,9 @@
     transform: scale(1.1);
     background-color: lightgrey;
 }
-
+.desc{
+    color:rgb(73, 72, 72);
+}
 .h1 {
     margin-bottom: 10px;
 }
@@ -115,10 +119,14 @@ p {
     z-index: 2;
     width: 50%;
     overflow: auto;
+    bottom: 20px;
     left: 26%;
     background-color: white;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 
+}
+.card.card.active .h1{
+    color: rgba(0, 0, 0, 0.863);
 }
 
 .card.active .cardBody {
@@ -132,11 +140,11 @@ p {
     filter: blur(0);
 } */
 
- #pagiContainer.blur{ 
-    /* filter:blur(2px); */
-    /* backdrop-filter:opacity(20%);  */
-    /* filter: blur(2px); */
- } 
+ /* #pagiContainer.blur{ 
+    filter:blur(2px);
+    backdrop-filter:opacity(20%); 
+    filter: blur(2px);
+ }  */
 
 .card.active .cardBody::before {
     display: none;
@@ -159,6 +167,7 @@ p {
     background: #10d681;
     background: rgba(62, 168, 255, 0.76);
     margin-top: 15px;
+    border-radius: 8px;
     display: inline-block;
     margin-left: 15px;
     cursor: pointer;
@@ -169,7 +178,8 @@ p {
 }
 
 .card.active .read {
-    background: #ff3b7e;
+    background: #ff3b80e7;
+    color: black;
 }
 
 .card .read::before {
@@ -213,6 +223,56 @@ p {
         width: 72%;
         overflow: auto;
         left: 13%;
+        bottom: 20px;
     
     }
 }
+
+.gooey {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 142px;
+    height: 40px;
+    margin: -20px 0 0 -71px;
+    background: white;
+    filter: contrast(20);
+  }
+  .dot {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 12px;
+      left: 15px;
+      filter: blur(4px);
+      background: #000;
+      border-radius: 50%;
+      transform: translateX(0);
+      animation: dot 2.8s infinite;
+  }
+  .dots {
+      transform: translateX(0);
+      margin-top: 12px;
+      margin-left: 31px;
+      animation: dots 2.8s infinite;
+  }
+  .gooey span {
+        display: block;
+        float: left;
+        width: 16px;
+        height: 16px;
+        margin-left: 16px;
+        filter: blur(4px);
+        background: #000;
+        border-radius: 50%;
+  }
+  @keyframes dot {
+    50% {
+      transform: translateX(96px);
+    }
+  }
+  @keyframes dots {
+    50% {
+      transform: translateX(-31px);
+    }
+  }

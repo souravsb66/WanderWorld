@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn-click:active {
+    transform: scale(0.98);
+}
+#main-body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#left-div {
+    padding: 50px;
+    /* border: 1px solid black; */
+    width: 35%;
+    height: 100vh;
+    background-color: #f1cdd7;
+    transition: 0.5s;
+}
+#left-div img {
+    width: 200px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+
+}
+#left-div h1 {
+    color: #865c6c;
+    font-size: 30px;
+}
+#image-sc {
+    display: none;
+    transition: 0.5s;
+
+}
+#right-div {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    transition: 0.5s;
+
+    /* border: 1px solid black; */
+}
+#signup-link {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+}
+#signup-link > a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #4f3cd3;
+}
+#login-div {
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: auto;
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+#google-auth {
+    /* margin: 20px 0; */
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 70%;
+}
+#google-div {
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    background-color: #1a73e8;
+    padding: 2px;
+    color: white;
+    border-radius: 5px;
+    width: 80%;
+    min-width: 250px;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+
+}
+#google-div:hover {
+    cursor: pointer;
+    background-color: #4b84ce;
+}
+#google-div img {
+    width: 35px;
+    border-radius: 3px;
+}
+#google-div > div:first-child {
+    display: flex;
+}
+#google-div > div:last-child {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+#tweet {
+    background-color: #f2f2f2;
+    color: #6e6d7a;
+    padding: 11px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#tweet:hover {
+    cursor: pointer;
+    background-color: #dadada;
+}
+
+#login-form-div {
+    border-top: 1px solid #cecece;
+    padding-top: 30px;
+}
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+#login-form > * {
+    margin-bottom: 10px;
+}
+#login-form > input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    background-color: #f3f3f3;
+    transition: 0.5s;
+    outline: none;
+}
+#login-form > input:hover {
+    cursor: text;
+    background-color: white;
+    box-shadow: rgba(228, 10, 119, 0.16) 0px 10px 36px 0px, rgba(255, 26, 167, 0.06) 0px 0px 0px 1px;
+}
+#login-form > input:focus {
+    border: 1px solid rgb(219, 28, 172)
+}
+#pwd-label {
+    display: flex;
+    justify-content: space-between;
+}
+#pwd-label > a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #4f3cd3;
+}
+#pwd-label > a:hover {
+    color: #c73333;
+}
+#login-form > button {
+    margin-top: 15px;
+    background-color: #ea4c89;
+    color: white;
+    font-size: 16px;
+    width: 40%;
+    border: 1px solid #ea4c89;
+    border-radius: 10px;
+    padding: 10px 30px ;
+}
+#login-form > button:hover {
+    cursor: pointer;
+    background-color: #ec6498;
+}
+#message {
+    display: none;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #ff5555;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 721px) { 
+    #left-div {
+        display: none;
+    }
+    #right-div {
+        width: 100%;
+        align-items: center;
+    }
+    #image-sc {
+        display: block;
+        width: 25%;
+        margin-bottom: 30px;
+    }
+    #signup-link {
+        position: absolute;
+        bottom: 0;
+    }
+    #login-div {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 720px) { 
+    #left-div {
+        display: none;
+    }
+    #right-div {
+        width: 100%;
+        align-items: center;
+    }
+    #image-sc {
+        display: block;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    #signup-link {
+        position: absolute;
+        bottom: 0;
+    }
+    #login-div {
+        width: 85%;
+    }
+}

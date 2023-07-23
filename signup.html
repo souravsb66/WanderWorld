@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Log In</title>
+  </head>
+  <body>
+    <main id="main-body">
+      <div id="left-div">
+        <img src="./Files/logo-no-background.png" alt="" />
+        <h1>Discover the world’s top Designers & Creatives.</h1>
+      </div>
+
+      <div id="right-div">
+        <img src="./Files/logo-no-background.png" alt="" id="image-sc">
+        <div id="signup-link">
+          <span>Already a member?</span>
+          <a href="./login.html" class="btn-click">Sign in</a>
+        </div>
+        <div id="login-div">
+          <h2>Sign up Crunch Designs</h2>
+          <div id="login-container">
+            <div id="google-auth">
+              <div id="google-div" class="btn-click">
+                <div>
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/010/353/285/original/colourful-google-logo-on-white-background-free-vector.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <span>Sign in with Google</span>
+                </div>
+              </div>
+              <div id="tweet" class="btn-click">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div id="signup-form-div">
+              <form id="signup-form">
+                <div>
+                  <div>
+                    <label for="name-inp" id="name-label"><h4>Name</h4></label>
+                    <input type="text" name="" id="name-inp" />
+                  </div>
+                  <div>
+                    <label for="username-inp" id="username-label"><h4>Username</h4></label>
+                    <input type="text" name="" id="username-inp" />
+                  </div>
+                </div>
+                <label for="email-inp" id="email-label"><h4>Email</h4></label>
+                <input type="email" name="" id="email-inp" />
+                <label for="pwd-inp" id="pwd-label"><h4>Password</h4></label>
+                <input
+                  type="password"
+                  id="pwd-inp"
+                  placeholder="6+ characters"
+                />
+
+                <div id="checkbox-msg">
+                  <p>You must agree to the Terms of Service</p>
+                </div>
+                <div id="checkbox-div">
+                  <input id="checkbox" type="checkbox" />
+                  <label for="checkbox">
+                    Creating an account means you’re okay with our
+                    <a href="https://dribbble.com/privacy"
+                      >Terms of Service, Privacy Policy,</a
+                    >
+                    and our default
+                    <a href="https://dribbble.com/notifications"
+                      >Notification Settings.</a
+                    >
+                  </label>
+                </div>
+                <button id="account-btn" class="btn-click">Create Account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./Scripts/signup.js"></script>
+  </body>
+</html>

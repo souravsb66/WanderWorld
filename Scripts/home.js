@@ -1,7 +1,26 @@
+// modified
+let userPresent=localStorage.getItem("users");
+
+
+if(userPresent){
+    let user1=document.querySelector("#userUpdated");
+    user1.innerText=userPresent;
+
+    let signupLink=document.getElementById("signup");
+    signupLink.innerText="Log out";
+
+    signupLink.addEventListener("click",()=>{
+        localStorage.removeItem("users");
+        window.location.href="./index.html";
+        // location.reload();
+    })
+}
+// modified
 
 const baseURL = `https://cw-wwbackend.onrender.com`
 const citiesURL = `${baseURL}/cities`
 const emailListURL = `${baseURL}/emails`
+
 
 people = document.getElementById('people')
 
