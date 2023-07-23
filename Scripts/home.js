@@ -59,6 +59,7 @@ bookNowBtn.addEventListener('click', () => {
     }
     console.log(obj)
     localStorage.setItem('tour-data', JSON.stringify(obj))
+    window.location.href = './package.html'
 })
 
 
@@ -194,3 +195,11 @@ subscribeBtn.addEventListener('click', () => {
 
     console.log(email)
 })
+
+
+//check if user is logged in and making user icon reappear
+let userIcon = document.getElementById('usericon')
+
+let userLoginStatus = JSON.parse(localStorage.getItem('isLoggedIn')) || false
+
+userLoginStatus === 'true' ? userIcon.style.display = 'inline' : userIcon.style.display = 'none'
