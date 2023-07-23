@@ -1,5 +1,22 @@
 // modified
 let userPresent=localStorage.getItem("users");
+//check if user is logged in and making user icon reappear
+let userIcon = document.getElementById('usericon')
+let signupBtn = document.getElementById('signup')
+let logoutBtn = document.getElementById('logout')
+
+let userLoginStatus = JSON.parse(localStorage.getItem('isLoggedIn'))
+userIcon.style.display = userLoginStatus === true ? 'inline' :  'none'
+
+if (userLoginStatus === true) {
+    logoutBtn.style.display = 'inline'
+    signupBtn.style.display = 'none'
+}
+else {
+    signupBtn.style.display = 'inline'    
+    logoutBtn.style.display = 'none'
+}
+
 
 
 if(userPresent){
@@ -197,9 +214,3 @@ subscribeBtn.addEventListener('click', () => {
 })
 
 
-//check if user is logged in and making user icon reappear
-let userIcon = document.getElementById('usericon')
-
-let userLoginStatus = JSON.parse(localStorage.getItem('isLoggedIn')) || false
-
-userLoginStatus === 'true' ? userIcon.style.display = 'inline' : userIcon.style.display = 'none'
