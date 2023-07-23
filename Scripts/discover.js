@@ -163,7 +163,6 @@ let arr = [
 ]
 
 let pagiContainer = document.getElementById("pagiContainer");
-
 let cardlist = document.createElement("div");
 cardlist.classList.add("cardlist");
 let pagination = document.querySelector("#pagination");
@@ -229,8 +228,12 @@ function display(page) {
 
     readMore.addEventListener("click", function () {
       card.classList.toggle('active');
-      o.classList.toggle('act');
-   
+      pagiContainer.classList.toggle('blur');
+      pagiContainer.classList.toggle('noblur');
+      
+
+      // pagiContainer.style.filter="blur(2px)";
+
     })
 
     cardBody.append(title, divLocation, description);
