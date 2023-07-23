@@ -170,6 +170,7 @@ footer a {
 .newletter-form > #email-container > input::placeholder {
     color: #0383ec;
     font-weight: bold;
+    text-align: center;
 }
 
 input {

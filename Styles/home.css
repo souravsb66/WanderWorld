@@ -624,6 +624,8 @@ section#testimonial h2 {
     padding: 10px 20px;
   }
 
+  
+
   #holiday button {
     border: none;
     color: #fff;
@@ -631,7 +633,13 @@ section#testimonial h2 {
     background-color: var(--primary);
     padding: 10px 20px;
     border-radius: 25px;
-    margin-top: 20px;
+  }
+
+  section#holiday > div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
   }
 
   #seeMoreArticles {
