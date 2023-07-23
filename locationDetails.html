@@ -3,85 +3,211 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="stylesheet" href="./Styles/locationDetails.css" />
+    <script src="./Scripts/locationDetails.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <nav id="navbar">
+    <!-- <nav id="navbar">
       <a href="./index.html">Home</a>
       <a href="./locations.html">Locations</a>
-    </nav>
+    </nav> -->
 
-    <div id="ld-main-section">
-      <div id="ld-city-card">
-        <div id="ld-city-card-left">
-          <div class="ld-city-image-div">
-            
-          </div>
-          <div class="ld-city-detials">
-            <table class="ld-city-details-table">
-              <tr>
-                <td>State:</td>
-                <td id="ld-city-details-state"></td>
-              </tr>
-              <tr>
-                <td>Population:</td>
-                <td id="ld-city-details-population"></td>
-              </tr>
-              <tr>
-                <td>Weather:</td>
-                <td id="ld-city-detials-weather"></td>
-              </tr>
-              <tr>
-                <td>Languages:</td>
-                <td id="ld-city-detials-language"></td>
-              </tr>
-
-              <tr>
-                <td>Map:</td>
-              </tr>
-            </table>
-            <div class="ld-city-map">
-            </div>
-          </div>
-        </div>
-        <div id="ld-city-card-right">
-          <h1 class="ld-city-name"></h1>
-          <!-- <span id="ld-about-txt">About: </span> -->
-          <p class="ld-city-about">
-          </p>
-
-          <h3 style="margin-bottom: 10px;">Attractions</h3>
-          <div id="ld-city-attractions">
-            <!-- append attractions -->
-          </div>
-
-          <div id="ld-city-activities-food">
-            <div id="ld-city-activities">
-              <h3>Activities</h3>
-              <ul id="ld-city-activities-list">
-              </ul>
-            </div>
-            <div id="ld-city-food">
-              <h3>Food</h3>
-              <ul id="ld-city-food-list">
-              </ul>
-            </div>
-          </div>
-
-        </div>
-        <div id="ld-btn-div">
-          <a href="./locations.html">
-            <button id="ld-city-back-btn" class="ld-btn">Go Back</button>
+    <header>
+      <div class="header-left-items">
+              <button id="menu"><i class="fa-solid fa-bars"></i></button>
+          <a href="./index.html" id="ln-logo">
+              <img src="./assets/logo/black-logo.png" alt="" >
           </a>
-          <a href="./package.html">
-            <button id="id-city-book-btn" class="ld-btn">Book Now</button>
-          </a>
+      </div>
+      <div class="header-right-items">
+          <nav>
+              <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/discover.html">Discover</a></li>
+                  <li><a href="/locations.html">Locations</a></li>
+                  <li><a href="/about.html">About Us</a></li>
+                  <!-- <li><a href="/support.html">Support</a></li> -->
+              </ul>            
+          </nav>
+          <!-- <button id="searchBtn"><i class="fa-solid fa-magnifying-glass">fd</i></button> -->
+          <a href=""><i class="fa-solid fa-user"></i></a>
+          <a href="" id="signup">Sign up</a>
+      </div>
+      
+      <div id="searchBar">
+          <button id="cancelSearch"><i class="fa-solid fa-arrow-left"></i></button>
+          <input type="search" name="search" id="search" placeholder="Search for a destination">
+          
+          <button id="searchEnter"><i class="fa-solid fa-magnifying-glass">fd</i></button>
+      </div>
+  </header>
+
+
+    <div class="gooey">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  </div>
+  
+  <div id="ld-main-section">
+    <div id="ld-city-card">
+      <div id="ld-city-card-left">
+        <div class="ld-city-image-div">
+          
+        </div>
+        <div class="ld-city-detials">
+          <table class="ld-city-details-table">
+            <tr>
+              <td>State:</td>
+              <td id="ld-city-details-state"></td>
+            </tr>
+            <tr>
+              <td>Population:</td>
+              <td id="ld-city-details-population"></td>
+            </tr>
+            <tr>
+              <td>Weather:</td>
+              <td id="ld-city-detials-weather"></td>
+            </tr>
+            <tr>
+              <td>Languages:</td>
+              <td id="ld-city-detials-language"></td>
+            </tr>
+
+            <tr>
+              <td>Map:</td>
+            </tr>
+          </table>
+          <div class="ld-city-map">
+          </div>
         </div>
       </div>
+      <div id="ld-city-card-right">
+        <h1 class="ld-city-name"></h1>
+        <!-- <span id="ld-about-txt">About: </span> -->
+        <p class="ld-city-about">
+        </p>
 
+        <h3 style="margin-bottom: 10px;">Gallery</h3>
+        <div id="ld-city-attractions">
+          <!-- append attractions -->
+        </div>
+
+        <div id="ld-city-activities-food">
+          <div id="ld-city-activities">
+            <h3>Activities</h3>
+            <ul id="ld-city-activities-list">
+            </ul>
+          </div>
+          <div id="ld-city-food">
+            <h3>Food</h3>
+            <ul id="ld-city-food-list">
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div id="ld-btn-div">
+        <a href="./locations.html">
+          <button id="ld-city-back-btn" class="ld-btn">Go Back</button>
+        </a>
+        <a href="./package.html">
+          <button id="id-city-book-btn" class="ld-btn">Book Now</button>
+        </a>
+      </div>
     </div>
+  </div>
 
-    <script src="./Scripts/locationDetails.js"></script>
+    <!-- footber to be replaced -->
+    
+    <!-- <footer>
+      Newsletter section
+      <section id="newsletter">
+          <h2>Subscribe Our Newsletter</h2>
+          <div class="newletter-form">
+              <div id="email-container">
+                  <input type="email" placeholder="Enter Your Email">
+              </div>
+              <button>Subscribe</button>
+          </div>
+      </section>
+​
+​
+      <div id="footer-main">
+          <div class="address">
+              <p>WanderWorld</p>
+              <p><i class="fa-solid fa-location-dot"></i> Lakshmipuram road, Guntur, Andhra Pradesh, India</p>
+              <p><i class="fa-solid fa-phone"></i> 0863 -222000</p>
+              <p><i class="fa-solid fa-envelope"></i> support@wanderworld.com</p>
+          </div>
+​
+          <div class="link-set" id="link-set-1">
+              <ul>
+                  <li><a href="">My Account</a></li>
+                  <li><a href="">Search Terms</a></li>
+                  <li><a href="">Advanced Search</a></li>
+                  <li><a href="">Orders & Returns</a></li>
+                  <li><a href="">Help & FAQ</a></li>
+                  <li><a href="">Store Locations</a></li>
+              </ul>
+          </div>
+          <div class="link-set" id="link-set-2">
+              <ul>
+                  <li><a href="">Information</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Refunds & Returns</a></li>
+                  <li><a href="">Delivery</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Terms & Conditions</a></li>
+              </ul>
+          </div>
+          <div class="link-set" id="link-set-3">
+              <ul>
+                  <li><a href="">Information</a></li>
+                  <li><a href="">Rock Climbing Gears</a></li>
+                  <li><a href=""></a>Solar Powered Helmet</li>
+                  <li><a href=""></a>Pull Rope Rubber</li>
+                  <li><a href="">Pairing Knife</a></li>
+                  <li><a href="">Ladder Golf</a></li>
+              </ul>
+          </div>
+      </div>
+​
+      <div class="socials">
+          <p>Follow Us On</p>
+          <ul>
+              <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+      </div>
+​
+  </footer> -->
+​
+  <!-- End of footer -->
+​
+  <!-- Sidebar -->
+​
+  <div id="sidebar">
+      <nav>
+          <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="./discover.html">Discover</a></li>
+              <li><a href="./locations.html">Locations</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./support.html">Support</a></li>
+          </ul>
+      </nav>
+      <button id="back"><i class="fa-solid fa-arrow-left"></i></button>
+  </div>
+  
   </body>
 </html>
