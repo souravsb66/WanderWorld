@@ -15,9 +15,9 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Plans Page</title>
   </head>
   <body>
@@ -29,10 +29,11 @@
 
     <!-- popup-start -->
 
-    <div class="popup container rounded-3 text-center ">
+    <div class="popup container rounded-3 text-center">
       <div class="row gap-4">
         <div class="col-md-4 pop-card ">
-          <h2 class="text-primary">Hotel</h2>
+          <h2 class="">Hotel</h2>
+         <div class="w-25 hr-line"></div>
           <div class="d-flex gap-2">
             <img class="w-50 rounded-2" src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI=" alt="">
             <img class="w-50" src="https://media.istockphoto.com/id/472899538/photo/downtown-cleveland-hotel-entrance-and-waiting-taxi-cab.jpg?s=612x612&w=0&k=20&c=rz-WSe_6gKfkID6EL9yxCdN_UIMkXUBsr67884j-X9o=" alt="">
@@ -44,9 +45,11 @@
           
         </div>
 
+       
 
         <div class="col-md-4 pop-card">
-          <h2 class="text-primary">Food</h2>
+          <h2 class="">Food</h2>
+          <div class="w-25 hr-line"></div>
           <div class="d-flex gap-2">
             <img class="w-50 rounded-2" src="https://img.freepik.com/premium-photo/indian-hindu-veg-thali-also-known-as-food-platter-is-complete-lunch-dinner-meal-closeup-selective-focus_466689-9082.jpg?w=2000" alt="">
             <img class="w-50" src="https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2018/05/Kolkata-Blog-Banner-1030x538.png" alt="">
@@ -61,11 +64,11 @@
         <div class="col-md-3 pop-card">
           <!-- <h2>Pop-up </h2> -->
           <ul class="list-group mt-4 p-2">
-            <li class="list-group-item p-2 text-primary fw-bold m-1">3 Star Hotel</li>
-            <li class="list-group-item p-2 text-primary fw-bold m-1">Paid Food</li>
-            <li class="list-group-item p-2 text-primary fw-bold m-1">Free Bus Services</li>
-            <li class="list-group-item p-2 text-primary fw-bold m-1">Safety Guide</li>
-            <li class="list-group-item p-2 text-primary fw-bold m-1">Personal Photographer</li>
+            <li class="list-group-item p-2 fw-bold m-1" id="hotel">3 Star Hotel</li>
+            <li class="list-group-item p-2 fw-bold m-1" id="food">Paid Food</li>
+            <li class="list-group-item p-2 fw-bold m-1">Free Bus Services</li>
+            <li class="list-group-item p-2 fw-bold m-1">Safety Guide</li>
+            <li class="list-group-item p-2 fw-bold m-1">Personal Photographer</li>
             <button class="button btn btn-outline-primary close-button mt-3">Close</button>
           </ul>
         </div>
@@ -86,10 +89,11 @@
       <div class="container justify-content-center py-3 px-5">
         <div class="row gap-3 justify-content-center">
           <div
-            class="col col-sm-10 col-md-3 ms- mx-2 card px-4 pt-4 mb-5 pb-3 light_card fw-bold first-card "
+            class="col col-sm-10 col-md-4 col-lg-3 ms- mx-2 card px-4 pt-4 mb-5 pb-3 light_card fw-bold first-card "
           >
-            <h2 class="">Explorer</h2>
-            <p class="fw-bolder "><span class="plan-price ">₹ 49999</span></p>
+            <h2 class="text-center">Explorer</h2>
+            <div class="w-50 pak-line"></div>
+            <p class="fw-bolder mt-2 "><span class="plan-price rounded-1">₹ 49999</span></p>
             <!-- <button class="btn btn-outline-primary" id="package_btn">
                 Book Now
             </button> -->
@@ -105,20 +109,21 @@
             <li class="unchecked">Insurance</li>
             <li class="unchecked">Budgeting</li>
             <!-- <div class="bottom-blue justify-content-center mx-4 my-3"></div> -->
-            <div class="d-flex justify-content-evenly mt-3">
-              <button class="btn btn-outline-light" id="package_btn">
+            <div class="d-flex justify-content-evenly mt-3 ">
+              <a class="btn btn-outline-primary" href="#" id="package_btn">
                   Book Now
-              </button>
+              </a>
               <button class="btn btn-outline-light" id="p-details">Get Details</button>
 
             </div>
           </div>
 
           <div
-            class="col-sm-10 col-md-3 ms- mx-2 card px-4 pt-4 dark_card mb-5 pb-3 text-white fw-bold "
+            class="col-sm-10 col-md-4 col-lg-3 ms- mx-2 card px-4 pt-4 dark_card mb-5 pb-4 text-white fw-bold "
           >
-            <h2 class="">Adventure </h2>
-            <p class="fw-bolder"><span class="plan-price ">₹ 99999</span></p>
+            <h2 class="text-center">Adventure </h2>
+            <div class=" pak-mid-line"></div>
+            <p class="fw-bolder mt-2"><span class="plan-price rounded-1">₹ 99999</span></p>
             <!-- <button class="btn btn-outline-light mt-2" id="Premium_btn">
               More info
             </button> -->
@@ -130,20 +135,21 @@
             <li class="unchecked">Insurance</li>
             <li class="unchecked">Budgeting</li>
             <!-- <div class="bottom-red justify-content-center mx-4 mt-3"></div> -->
-            <div class="d-flex justify-content-evenly mt-3">
-              <button class="btn btn-outline-light" id="package_btn">
+            <div class="d-flex justify-content-evenly mt-3 px-0">
+              <a class="btn btn-outline-light" href="#" id="package_btn">
                   Book Now
-              </button>
-              <button class="btn btn-outline-light">Get Details</button>
+              </a>
+              <button class="btn btn-outline-light" id="dark_details">Get Details</button>
 
             </div>
           </div>
 
           <div
-            class="col-sm-10 col-md-3 mx-2 card px-4 pt-4 light_card mb-5 pb-3 fw-bold side-card "
+            class="col-sm-10 col-md-4 col-lg-3 mx-2 card px-4 pt-4 light_card mb-5 pb-3 fw-bold side-card "
           >
             <h2 class="text-center">Luxury </h2>
-            <p class="fw-bolder text-center"><span class="plan-price text-center">₹ 149999</span></p>
+            <div class="w-50  pak-line"></div>
+            <p class="fw-bolder mt-2"><span class="plan-price text-center rounded-1 plan-price-end">₹ 149999</span></p>
             <!-- <button class="btn btn-outline-primary" id="package_btn">
               Book Now
             </button> -->
@@ -152,19 +158,19 @@
               More info
             </button> -->
             
-            <li class="checked ">Accommodation</li>
-            <li class="checked">Transportation</li>
-            <li class="checked">Safety</li>
-            <li class="checked">Dining</li>
-            <li class="checked">Sightseeing</li>
-            <li class="checked">Insurance</li>
-            <li class="checked">Budgeting</li>
+            <li class="checked  end-float">Accommodation</li>
+            <li class="checked end-float">Transportation</li>
+            <li class="checked end-float">Safety</li>
+            <li class="checked end-float">Dining</li>
+            <li class="checked end-float">Sightseeing</li>
+            <li class="checked end-float">Insurance</li>
+            <li class="checked end-float">Budgeting</li>
             <!-- <div class="bottom-blue justify-content-center mx-4 mt-3 "></div> -->
             <div class="d-flex justify-content-evenly mt-3">
-              <button class="btn btn-outline-light" id="package_btn">
+              <a class="btn btn-outline-primary" href="#" id="package_btn">
                   Book Now
-              </button>
-              <button class="btn btn-outline-light">Get Details</button>
+              </a>
+              <button class="btn btn-outline-light" id="side_details">Get Details</button>
 
             </div>
           </div>
