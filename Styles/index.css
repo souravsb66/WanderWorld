@@ -44,6 +44,10 @@ header {
     height: 40px;
 }
 
+#usericon {
+    display: none;
+}
+
 #menu {
     display: none;
     padding: 10px;
