@@ -1,8 +1,12 @@
 
+const baseURL = `https://cw-wwbackend.onrender.com`
+const citiesURL = `${baseURL}/cities`
+const emailListURL = `${baseURL}/emails`
+
 people = document.getElementById('people')
 
 async function populateDestinations() {
-    const response = await fetch(`http://localhost:8080/cities`)
+    const response = await fetch(citiesURL)
     const data = await response.json()
 
     console.log(data)
@@ -31,7 +35,7 @@ let bookNowBtn = document.getElementById('bookNow')
 bookNowBtn.addEventListener('click', () => {
     let obj = {
         destination: locations.value,
-        startdate: startdate.value,
+        startdate: startdate.innerText,
         persons: people.value
     }
     console.log(obj)
@@ -129,7 +133,7 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 var swiper = new Swiper(".mySwiper", {
     loop: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 1000,
     autplayHoverPause: true,
 
@@ -147,4 +151,27 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
         el: ".swiper pagination",
     }
+})
+
+
+// newsletter section
+
+const subscribeBtn = document.getElementById('subscribe')
+const emailField = document.getElementById('email')
+
+subscribeBtn.addEventListener('click', () => {
+    let email = emailField.value
+    let obj = {
+        email: email
+    }
+
+    fetch(emailListURL, {
+        method: 'POST',
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify(obj)
+    })
+
+    console.log(email)
 })
