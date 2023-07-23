@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/index.css">
     <!-- <link rel="stylesheet" href="components/card/card.css"> -->
     <link rel="stylesheet" href="Styles/home.css">
+    <script src="./Scripts/home.js" defer></script>
     <title>WanderWorld</title>
 </head>
 <body>
@@ -47,11 +50,9 @@
                 <div class="quickbook-input">
                     <select name="locations" id="locations">
                         <option value="">Destination</option>
-                        <option value="">Rajasthan</option>
-                        <option value="">Goa</option>
                     </select>
                 </div>
-                <div class="quickbook-input">
+                <div class="quickbook-input" id="startDate">
                     <button id="start">Check in Date</button>
                     
                     <i class="fa-regular fa-calendar-days"></i>
@@ -130,6 +131,9 @@
             </div>
         </section>
     </div>
+
+
+    <!-- popular section -->
 
     <section id="popular">
 
@@ -255,6 +259,175 @@
         
     </section>
 
+
+    <!-- discover section -->
+    
+    <section id="holiday">
+
+        <h2>Perfect Holiday Plan</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- <button id="seeMoreArticles">See More</button> -->
+    </section>
+
+    <!-- testimonial section -->
+
+    <section id="testimonial">
+        <h2>Testimonials</h2>
+        <div class="wrapper">
+            <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+            <ul class="carousel">
+              <li class="card">
+                <div class="img"><img src="./assets/images/testimonial1.jpg" alt="img" draggable="false"></div>
+                <p> had the most incredible travel experience ever! The breathtaking landscapes, delicious local cuisines, and warm hospitality made the trip unforgettable. Can't wait to go back and explore more!</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>Emily</li>
+                </ul>
+              </li>
+              <li class="card">
+                <div class="img"><img src="./assets/images/testimonial2.jpg" alt="img" draggable="false"></div>
+                <p>This travel adventure exceeded all my expectations! From exploring hidden gems to meeting friendly locals, every moment was magical. I'm already planning my next trip with the same travel company!</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>Sophia</li>
+                </ul>
+              </li>
+              <li class="card">
+                <div class="img"><img src="./assets/images/testimonial3.jpg" alt="img" draggable="false"></div>
+                <p>What a fantastic journey! The tour was expertly organized, and I felt safe and cared for throughout. The memories I made with my fellow travelers will stay with me forever. Highly recommended!</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>Olivia</li>
+                </ul>
+              </li>
+              <li class="card">
+                <div class="img"><img src="./assets/images/testimonial4.jpg" alt="img" draggable="false"></div>
+                <p>I embarked on a solo adventure, and it turned out to be the best decision! The trip offered a perfect blend of adventure and relaxation. I returned home with cherished memories and newfound confidence.</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>Ethan</li>
+                </ul>
+              </li>
+              <li class="card">
+                <div class="img"><img src="./assets/images/testimonial5.jpg" alt="img" draggable="false"></div>
+                <p>Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true. I'm grateful for the opportunity to witness the world's beauty and learn from different traditions.</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>Ava</li>
+                </ul>
+              </li>
+              <li class="card">
+                <div class="img"><img src="./assets/images/testimonial6.jpg" alt="img" draggable="false"></div>
+                <p>Words can't express how grateful I am for this travel experience. It was like stepping into a storybook filled with adventure and wonder. The memories I made with my fellow female travelers will be cherished forever.</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>Isabella</li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
+          </div>
+    </section>
+
+    <!-- calendar section -->
+    <div id="calendarpane">
+        <div>
+            <button id="calendarCancel"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div>
+            <h1>Choose Starting Date</h1>
+            <input type="date" name="" id="datepicker">
+            <button id="chooseDate">Continue</button>
+        </div>
+    </div>
+
+
+
     <section id="summerspecial">
         <div class="summerspecialcontainer">
             <div class="summerspecialimage">
@@ -353,7 +526,10 @@
     </div>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="Scripts/main.js" type="module"></script>
+<script src="Scripts/home.js" ></script>
+<script src="Scripts/calendar.js"></script>
 <script src="Scripts/countdown.js"></script>
 </html>
