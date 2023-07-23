@@ -10,6 +10,42 @@
 //   location.replace("./payment.html");
 // });
 
+let pack1_name = document.getElementById("pack1_name");
+let pack2_name = document.getElementById("pack2_name");
+let pack3_name = document.getElementById("pack3_name");
+
+
+let package1_btn = document.querySelector("#package1_btn");
+let package2_btn = document.querySelector("#package2_btn");
+let package3_btn = document.querySelector("#package3_btn");
+
+let obj1 = {
+  package_name: pack1_name.innerText,
+}
+
+package1_btn.addEventListener("click", ()=>{
+  localStorage.setItem("package",JSON.stringify(obj1));
+  window.location.href="./Payment.html";
+});
+
+
+let obj2 = {
+  package_name: pack2_name.innerText,
+}
+
+package2_btn.addEventListener("click", ()=>{
+  localStorage.setItem("package",JSON.stringify(obj2));
+  window.location.href="./Payment.html";
+});
+
+let obj3 = {
+  package_name: pack3_name.innerText,
+}
+
+package3_btn.addEventListener("click", ()=>{
+  localStorage.setItem("package",JSON.stringify(obj3));
+  window.location.href="./Payment.html";
+});
 
 
 // 
@@ -48,7 +84,7 @@
    closeButton.addEventListener('click', () => {
     body.style.backgroundColor = "";
      popup.style.display = 'none';
-     body_parent.style.display ="flex"
+     body_parent.style.display ="flex";
    });
 
    dark_details.addEventListener('click', () => {
@@ -179,4 +215,5 @@ side_card.addEventListener("mouseout",()=>{
 
 
 }
+
 

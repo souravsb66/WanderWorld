@@ -64,7 +64,7 @@ let set = setInterval(() => {
     i--;
     re_time.innerText = i;
     if (i == 0) {
-        window.location = "";
+        window.location.href = "./index.html";
         clearInterval(set);
     }
 }, 1000);

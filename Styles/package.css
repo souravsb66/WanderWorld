@@ -2,11 +2,21 @@ body {
     font-family: 'Poppins' !important;
 }
 
+/* nav-start */
+
+
+
+
+
+/* nav-end */
+
 .body-parent{
     /* background-color:rgb(215, 222, 229) ; */
     position: relative;
     /* width: 800px; */
 }
+
+
 
 .plan-price{
     margin-left: -25px;
