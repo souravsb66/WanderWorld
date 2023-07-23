@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    /*  */
+
     position: relative;
 }
 
@@ -107,34 +107,36 @@ p {
     height: 270px;
     overflow: hidden;
 }
-/*  */
 .card.active{
     height: 600px;
-    /* height: auto; */
     width: 70%;
     margin: auto;
-    /* position: absolute; */
     position: fixed;
     z-index: 2;
     width: 50%;
     overflow: auto;
     left: 26%;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 
 }
 
-.o .act{
-    /* filter: blur(10px); */
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
-    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
-    z-index: 999;
-}
 .card.active .cardBody {
     height: auto;
     position: relative;
- 
 }
+/* .card.noblur #pagiContainer {
+    backdrop-filter: blur(2px);
+}
+#pagiContainer.noblur .cardBody{
+    filter: blur(0);
+} */
+
+ #pagiContainer.blur{ 
+    /* filter:blur(2px); */
+    /* backdrop-filter:opacity(20%);  */
+    /* filter: blur(2px); */
+ } 
 
 .card.active .cardBody::before {
     display: none;
@@ -175,7 +177,7 @@ p {
 }
 
 .card.active .read::before {
-    content: 'READ LESS';
+    content: 'CLOSE';
 }
 
 @media screen and (min-width:300px) and (max-width:599px) {
@@ -184,18 +186,16 @@ p {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
-    .card.active{
+     .card.active{
         margin: auto;
-        position: fixed;
+        position: static;
         z-index: 2;
-        width: 75%;
-        overflow: auto;
-        left: 13%;
-        right: 50%;
+        width: 100%;
+        /* overflow: scroll; */
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
-    } 
+        height: auto;
+    }  
 
 }
 
@@ -207,10 +207,7 @@ p {
     }
     .card.active{
         height: 600px;
-        /* height: auto; */
-        /* width: 70%; */
         margin: auto;
-        /* position: absolute; */
         position: fixed;
         z-index: 2;
         width: 72%;
