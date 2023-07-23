@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Log In</title>
+</head>
+
+<body>
+    <div id="message">
+        <p>We couldn’t find an account matching the username and password you entered. Please check your username and
+            password and try again.</p>
+    </div>
+    <main id="main-body">
+        <div id="left-div">
+            <img src="./Files/logo-no-background.png" alt="">
+            <h1>Discover the world’s top Designers & Creatives.</h1>
+        </div>
+
+
+        <div id="right-div">
+            <img src="./Files/logo-no-background.png" alt="" id="image-sc">
+            <div id="signup-link">
+                <span>Not a member?</span>
+                <a href="./signup.html" class="btn-click">Sign up now</a>
+            </div>
+            <div id="login-div">
+                <h2>Sign in to Crunch Designs</h2>
+                <div id="login-container">
+                    <div id="google-auth">
+                        <div id="google-div" class="btn-click">
+                            <div>
+                                <img src="https://static.vecteezy.com/system/resources/previews/010/353/285/original/colourful-google-logo-on-white-background-free-vector.jpg"
+                                    alt="">
+                            </div>
+                            <div>
+                                <span>Sign in with Google</span>
+                            </div>
+                        </div>
+                        <div id="tweet" class="btn-click">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div id="login-form-div">
+                        <form id="login-form">
+                            <label for="user-inp">
+                                <h4>Username or Email Address</h4>
+                            </label>
+                            <input type="text" name="" id="user-inp">
+                            <label for="user-pwd" id="pwd-label">
+                                <h4>Password</h4> <a href="">Forgot Password?</a></span>
+                            </label>
+                            <input type="password" name="" id="user-pwd">
+                            <button id="signin-btn" class="btn-click">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./Scripts/login.js"></script>
+</body>
+
+</html>

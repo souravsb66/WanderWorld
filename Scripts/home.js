@@ -1,4 +1,20 @@
+// modified
+let userPresent=localStorage.getItem("users");
 
+if(userPresent){
+    let user1=document.querySelector("#userUpdated");
+    user1.innerText=userPresent;
+
+    let signupLink=document.getElementById("signup");
+    signupLink.innerText="Log out";
+
+    signupLink.addEventListener("click",()=>{
+        localStorage.removeItem("users");
+        window.location.href="./index.html";
+        // location.reload();
+    })
+}
+// modified
 people = document.getElementById('people')
 
 async function populateDestinations() {

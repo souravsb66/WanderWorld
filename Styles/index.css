@@ -40,7 +40,9 @@ header {
 #search {
     width: 60%;
 }
-
+#logo img{
+    height: 40px;
+}
 
 #menu {
     display: none;
