@@ -92,8 +92,8 @@ let bookNowBtn = document.getElementById('bookNow')
 bookNowBtn.addEventListener('click', () => {
     let obj = {
         destination: locations.value,
-        startdate: startdate.innerText,
-        persons: people.value
+        date_of_journey: startdate.innerText,
+        people: people.value
     }
     console.log(obj)
     localStorage.setItem('booking-detail', JSON.stringify(obj))
