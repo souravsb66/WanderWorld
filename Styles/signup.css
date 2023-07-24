@@ -16,14 +16,14 @@
     width: 35%;
     height: 100vh;
     position: fixed;
-    background-color: #f2d184;
+    background-color: #219ebc;
 }
 #left-div img {
     width: 200px;
     margin-bottom: 30px;
 }
 #left-div h1 {
-    color: #866118;
+    color: white;
     font-size: 30px;
 }
 #image-sc {

@@ -43,7 +43,7 @@ header {
     width: 60%;
 }
 #logo img{
-    height: 40px;
+    height: 30px;
 }
 
 #usericon {
@@ -282,3 +282,11 @@ input:focus {
     right: 10px;
 }
 
+/* logout css */
+#logout  {
+    background-color: var(--primary);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    display: none;
+}
