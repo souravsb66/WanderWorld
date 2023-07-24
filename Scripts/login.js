@@ -55,8 +55,8 @@ submit.addEventListener("click", (e) => {
         localStorage.setItem("user-data", JSON.stringify(userData));
 
         // modified
-        let loggedUser=userData[resIndex].name;
-        localStorage.setItem("users",loggedUser);
+        // let loggedUser=userData[resIndex].name;
+        // localStorage.setItem("users",loggedUser);
 
         setTimeout(()=> {
             window.location.replace("./index.html");
