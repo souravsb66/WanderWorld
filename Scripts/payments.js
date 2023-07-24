@@ -100,19 +100,19 @@ card_book_btn.addEventListener("click",()=>{
 
 // localstorage
 
-let obj={
-    destination :  "Chala ja ..",
-    people :2,
-    date_of_journey : "2nd may"
-}
+// let obj={
+//     destination :  "Chala ja ..",
+//     people :2,
+//     date_of_journey : "2nd may"
+// }
 
-let obj2={
-    name :"Saurabh Boss",
-    email : "BossG@pani.com"
-}
+// let obj2={
+//     name :"Saurabh Boss",
+//     email : "BossG@pani.com"
+// }
 
-localStorage.setItem("booking-detail", JSON.stringify(obj));
-localStorage.setItem("user-data", JSON.stringify(obj2));
+// localStorage.setItem("booking-detail", JSON.stringify(obj));
+// localStorage.setItem("user-data", JSON.stringify(obj2));
 
 
 let destination = document.getElementById("destination")
