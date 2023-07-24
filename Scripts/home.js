@@ -1,5 +1,5 @@
 // modified
-let userPresent=localStorage.getItem("users");
+// let userPresent=localStorage.getItem("users");
 //check if user is logged in and making user icon reappear
 let userIcon = document.getElementById('usericon')
 let signupBtn = document.getElementById('signup')
@@ -21,13 +21,7 @@ if (userLoginStatus === true) {
     signupBtn.style.display = 'none'
     mSignupBtn.style.display = 'none'
 
-    currentUser = userData.filter((ele,i)=> {
-        if(ele.loggedIn) {
-            currentUserIndex = i;
-            return ele;
-        }
-      })
-      // console.log(currentUser);
+   
 }
 else {
     signupBtn.style.display = 'inline'    
@@ -37,38 +31,28 @@ else {
 }
 
 logoutBtn.addEventListener('click', () => {
-    localStorage.setItem("isLoggedIn", false);
-    let newData = userData[currentUserIndex];
-    delete newData.loggedIn;
-    userData[currentUserIndex] = newData;
-    localStorage.setItem("user-data", JSON.stringify(userData));
-    window.location.reload();
+    
 })
 mLogoutBtn.addEventListener('click', () => {
-    localStorage.setItem("isLoggedIn", false);
-    let newData = userData[currentUserIndex];
-    delete newData.loggedIn;
-    userData[currentUserIndex] = newData;
-    localStorage.setItem("user-data", JSON.stringify(userData));
-    window.location.reload();
+    
 })
 signupBtn.addEventListener('click', () => {window.location.href='./signup.html'})
 mSignupBtn.addEventListener('click', () => {window.location.href='./signup.html'})
 
 
-if(userPresent){
-    let user1=document.querySelector("#userUpdated");
-    user1.innerText=userPresent;
+// if(userPresent){
+//     let user1=document.querySelector("#userUpdated");
+//     user1.innerText=userPresent;
 
-    let signupLink=document.getElementById("signup");
-    signupLink.innerText="Log out";
+//     let signupLink=document.getElementById("signup");
+//     signupLink.innerText="Log out";
 
-    signupLink.addEventListener("click",()=>{
-        localStorage.removeItem("users");
-        window.location.href="./index.html";
-        // location.reload();
-    })
-}
+//     signupLink.addEventListener("click",()=>{
+//         localStorage.removeItem("users");
+//         window.location.href="./index.html";
+//         // location.reload();
+//     })
+// }
 // modified
 
 const baseURL = `https://cw-wwbackend.onrender.com`
