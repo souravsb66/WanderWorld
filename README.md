@@ -50,15 +50,12 @@ The things you need before installing the software.
 A step by step guide that will tell you how to get the development environment up and running.
 
 ```
-$ First step
-$ Another step
-$ Final step
-```
+$ Installing Visual Studio Code. VS Code has support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, add keyboard shortcuts, edit preferences, and install extensions to add functionality.
+$ Adding extension of live server to load the HTML document in the browser automatically after saving the current work each time.
 
 ## Usage
 
 A few examples of useful commands and/or tasks.
-
 ```
 $ First example
 $ Second example
