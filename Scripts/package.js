@@ -10,6 +10,49 @@
 //   location.replace("./payment.html");
 // });
 
+//login logout functionality
+let loginStatus = JSON.parse(localStorage.getItem("isLoggedIn"));
+let userData = JSON.parse(localStorage.getItem("user-data")) || [];
+
+let userIcon = document.getElementById('usericon')
+let signupBtn = document.getElementById("signup");
+let logoutBtn = document.getElementById("logout");
+
+let currentUser;
+let currentUserIndex;
+
+if(loginStatus == true) {
+  // console.log("Hello")
+  userIcon.style.display = "inline";
+  logoutBtn.style.display = "inline";
+  signupBtn.style.display = "none";
+
+  currentUser = userData.filter((ele,i)=> {
+    if(ele.loggedIn) {
+        currentUserIndex = i;
+        return ele;
+    }
+  })
+  // console.log(currentUser);
+}
+else {
+  // console.log("Hey");
+  userIcon.style.display = "none";
+}
+
+logoutBtn.addEventListener("click", (e) => {
+
+  localStorage.setItem("isLoggedIn", false);
+
+  let newData = userData[currentUserIndex];
+  delete newData.loggedIn;
+
+  userData[currentUserIndex] = newData;
+  localStorage.setItem("user-data", JSON.stringify(userData));
+
+  window.location.reload();
+})
+
 let pack1_name = document.getElementById("pack1_name");
 let pack2_name = document.getElementById("pack2_name");
 let pack3_name = document.getElementById("pack3_name");

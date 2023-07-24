@@ -1,20 +1,58 @@
 // modified
-let userPresent=localStorage.getItem("users");
+// let userPresent=localStorage.getItem("users");
+//check if user is logged in and making user icon reappear
+let userIcon = document.getElementById('usericon')
+let signupBtn = document.getElementById('signup')
+let mSignupBtn = document.getElementById('mobile-signup')
+let logoutBtn = document.getElementById('logout')
+let mLogoutBtn = document.getElementById('mobile-logout')
+
+let currentUser;
+let currentUserIndex;
 
 
-if(userPresent){
-    let user1=document.querySelector("#userUpdated");
-    user1.innerText=userPresent;
 
-    let signupLink=document.getElementById("signup");
-    signupLink.innerText="Log out";
+let userLoginStatus = JSON.parse(localStorage.getItem('isLoggedIn'))
+userIcon.style.display = userLoginStatus === true ? 'inline' :  'none'
 
-    signupLink.addEventListener("click",()=>{
-        localStorage.removeItem("users");
-        window.location.href="./index.html";
-        // location.reload();
-    })
+if (userLoginStatus === true) {
+    logoutBtn.style.display = 'inline'
+    mLogoutBtn.style.display = 'inline'
+    signupBtn.style.display = 'none'
+    mSignupBtn.style.display = 'none'
+
+   
 }
+else {
+    signupBtn.style.display = 'inline'    
+    mSignupBtn.style.display = 'inline'    
+    logoutBtn.style.display = 'none'
+    mLogoutBtn.style.display = 'none'
+}
+
+logoutBtn.addEventListener('click', () => {
+    
+})
+mLogoutBtn.addEventListener('click', () => {
+    
+})
+signupBtn.addEventListener('click', () => {window.location.href='./signup.html'})
+mSignupBtn.addEventListener('click', () => {window.location.href='./signup.html'})
+
+
+// if(userPresent){
+//     let user1=document.querySelector("#userUpdated");
+//     user1.innerText=userPresent;
+
+//     let signupLink=document.getElementById("signup");
+//     signupLink.innerText="Log out";
+
+//     signupLink.addEventListener("click",()=>{
+//         localStorage.removeItem("users");
+//         window.location.href="./index.html";
+//         // location.reload();
+//     })
+// }
 // modified
 
 const baseURL = `https://cw-wwbackend.onrender.com`
@@ -58,7 +96,7 @@ bookNowBtn.addEventListener('click', () => {
         persons: people.value
     }
     console.log(obj)
-    localStorage.setItem('tour-data', JSON.stringify(obj))
+    localStorage.setItem('booking-detail', JSON.stringify(obj))
     window.location.href = './package.html'
 })
 
@@ -197,9 +235,3 @@ subscribeBtn.addEventListener('click', () => {
 })
 
 
-//check if user is logged in and making user icon reappear
-let userIcon = document.getElementById('usericon')
-
-let userLoginStatus = JSON.parse(localStorage.getItem('isLoggedIn')) || false
-
-userLoginStatus === 'true' ? userIcon.style.display = 'inline' : userIcon.style.display = 'none'
