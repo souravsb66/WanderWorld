@@ -131,7 +131,9 @@ let duration3 = document.getElementById("duration3");
 
 let data = JSON.parse(localStorage.getItem("booking-detail"));
 
-// console.log(duration);
+
+
+console.log(data);
 
 destination.innerText=data.destination;
 no_of_people.innerText = data.people;
@@ -146,14 +148,31 @@ no_of_people3.innerText = data.people;
 duration3.innerText = data.date_of_journey;
 
 // 
-let user_data = JSON.parse(localStorage.getItem("user-data"));
+// let user_data = JSON.parse(localStorage.getItem("user-data"));
+let loginStatus = JSON.parse(localStorage.getItem("isLoggedIn"));
+let userData = JSON.parse(localStorage.getItem("user-data")) || [];
 
+let currentUser;
+let currentUserIndex;
+
+
+if(loginStatus == true) {
+  currentUser = userData.filter((ele,i)=> {
+    if(ele.loggedIn) {
+        currentUserIndex = i;
+        return ele;
+    }
+  })
+  // console.log(currentUser);
+}
+
+let user_data = currentUser[currentUserIndex];
 
 let user_name =document.getElementById("user_name");
 let user_email =document.getElementById("user_email");
 
 user_name.innerText = user_data.name;
-user_email.innerText = user_data.email;
+// user_email.innerText = user_data.email;
 
 
 
