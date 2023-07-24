@@ -26,3 +26,5 @@ searchBtn.addEventListener('click', () => {
 cancelSearch.addEventListener('click', () => {
     searchBar.style.display = 'none' 
 })
+
+
