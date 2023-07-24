@@ -207,17 +207,20 @@ let pack_name = package_data.package_name;
 
 if(pack_name=="Silver"){
     silver.style.backgroundColor="white";
-    silver.style.color ="gray";
+    gold.style.color ="gray";
+    lux.style.color ="gray";
     pay_amount.innerText = pay_first_card.innerText * data.people;
 }
 else if(pack_name=="Gold"){
     gold.style.backgroundColor="white";
-    gold.style.color ="gray";
+    silver.style.color ="gray";
+    lux.style.color ="gray";
     pay_amount.innerText = pay_second_card.innerText* data.people;
 }
 else{
     lux.style.backgroundColor="white";
-    lux.style.color ="gray";
+    silver.style.color ="gray";
+    gold.style.color ="gray";
     pay_amount.innerText = pay_third_card.innerText* data.people;
 
 }
