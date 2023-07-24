@@ -7,37 +7,69 @@ let mSignupBtn = document.getElementById('mobile-signup')
 let logoutBtn = document.getElementById('logout')
 let mLogoutBtn = document.getElementById('mobile-logout')
 
+let loginStatus = JSON.parse(localStorage.getItem("isLoggedIn"));
+let userData = JSON.parse(localStorage.getItem("user-data")) || [];
+
 let currentUser;
 let currentUserIndex;
 
+if(loginStatus == true) {
+  // console.log("Hello")
+  
+  logoutBtn.style.display = 'inline'
+  mLogoutBtn.style.display = 'inline'
+  signupBtn.style.display = 'none'
+  mSignupBtn.style.display = 'none'
+  userIcon.style.display = "inline";
 
-
-let userLoginStatus = JSON.parse(localStorage.getItem('isLoggedIn'))
-userIcon.style.display = userLoginStatus === true ? 'inline' :  'none'
-
-if (userLoginStatus === true) {
-    logoutBtn.style.display = 'inline'
-    mLogoutBtn.style.display = 'inline'
-    signupBtn.style.display = 'none'
-    mSignupBtn.style.display = 'none'
-
-   
+  currentUser = userData.filter((ele,i)=> {
+    if(ele.loggedIn) {
+        currentUserIndex = i;
+        return ele;
+    }
+  })
+  // console.log(currentUser);
 }
 else {
+  // console.log("Hey");
     signupBtn.style.display = 'inline'    
     mSignupBtn.style.display = 'inline'    
     logoutBtn.style.display = 'none'
     mLogoutBtn.style.display = 'none'
+    userIcon.style.display = "none";
 }
 
-logoutBtn.addEventListener('click', () => {
-    
+logoutBtn.addEventListener("click", (e) => {
+
+  localStorage.setItem("isLoggedIn", false);
+
+  let newData = userData[currentUserIndex];
+  delete newData.loggedIn;
+
+  userData[currentUserIndex] = newData;
+  localStorage.setItem("user-data", JSON.stringify(userData));
+
+  window.location.reload();
 })
-mLogoutBtn.addEventListener('click', () => {
-    
-})
+
+mLogoutBtn.addEventListener("click", (e) => {
+
+    localStorage.setItem("isLoggedIn", false);
+  
+    let newData = userData[currentUserIndex];
+    delete newData.loggedIn;
+  
+    userData[currentUserIndex] = newData;
+    localStorage.setItem("user-data", JSON.stringify(userData));
+  
+    window.location.reload();
+  })
+
+
 signupBtn.addEventListener('click', () => {window.location.href='./signup.html'})
 mSignupBtn.addEventListener('click', () => {window.location.href='./signup.html'})
+
+
 
 
 // if(userPresent){
