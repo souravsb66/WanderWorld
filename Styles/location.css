@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* to be removed */
 /* #navbar {
     height: 50px;
@@ -11,15 +5,20 @@
     background-color: #9baaad;
 } */
 
+
+/* header */
 :root {
     --primary: #3EA8FF;
 }
 
-/* header */
-#ln-logo > img {
-    width: 200px;
-    transition: 0.5s;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* header */
 
 .active {
     color: var(--primary)
@@ -32,8 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition: 0.5s;
-
+    font-size: 1.3rem;
 }
 
 #searchBar {
@@ -46,14 +44,18 @@ header {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    transition: 0.5s;
-
 }
 
 #search {
     width: 60%;
 }
+#logo img{
+    height: 30px;
+}
 
+#usericon {
+    display: none;
+}
 
 #menu {
     display: none;
@@ -61,8 +63,6 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    transition: 0.5s;
-
 }
 
 #back, #searchEnter, #searchBtn, #cancelSearch {
@@ -85,11 +85,6 @@ header {
 
     header {
         padding: 15px 5px;
-    }
-}
-@media screen and (max-width: 500px) {
-    #ln-logo > img {
-        width: 150px;
     }
 }
 
@@ -141,16 +136,13 @@ header a:hover {
 }
 
 
-
 /* footer */
 
 footer {
     background-color: var(--primary);
     color: #fff;
     padding: 30px;
-    line-height: 2;
-    transition: 0.5s;
-
+    line-height: 2;;
 }
 
 footer  ul > li {
@@ -190,13 +182,14 @@ footer a {
 .newletter-form > #email-container > input::placeholder {
     color: #0383ec;
     font-weight: bold;
+    text-align: center;
 }
 
-#newsletter input {
+input {
     border: none;
 }
 
-#newsletter input:focus {
+input:focus {
     outline: none;
 }
 
@@ -297,20 +290,29 @@ footer a {
 
 /* navbar component ending */
 
+/* logout css */
+#logout  {
+    background-color: var(--primary);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    display: none;
+}
+
 #destination-div {
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 #destination-header {
     text-align: center;
     margin-right: 10px;
-    margin-top: 30px;
 }
 #destination-div > img {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 }
 #ln-main-section {
     /* border: 1px solid black; */

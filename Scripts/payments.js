@@ -100,19 +100,19 @@ card_book_btn.addEventListener("click",()=>{
 
 // localstorage
 
-let obj={
-    destination :  "Chala ja ..",
-    people :2,
-    date_of_journey : "2nd may"
-}
+// let obj={
+//     destination :  "Chala ja ..",
+//     people :2,
+//     date_of_journey : "2nd may"
+// }
 
-let obj2={
-    name :"Saurabh Boss",
-    email : "BossG@pani.com"
-}
+// let obj2={
+//     name :"Saurabh Boss",
+//     email : "BossG@pani.com"
+// }
 
-localStorage.setItem("booking-detail", JSON.stringify(obj));
-localStorage.setItem("user-data", JSON.stringify(obj2));
+// localStorage.setItem("booking-detail", JSON.stringify(obj));
+// localStorage.setItem("user-data", JSON.stringify(obj2));
 
 
 let destination = document.getElementById("destination")
@@ -207,17 +207,20 @@ let pack_name = package_data.package_name;
 
 if(pack_name=="Silver"){
     silver.style.backgroundColor="white";
-    silver.style.color ="gray";
+    gold.style.color ="gray";
+    lux.style.color ="gray";
     pay_amount.innerText = pay_first_card.innerText * data.people;
 }
 else if(pack_name=="Gold"){
     gold.style.backgroundColor="white";
-    gold.style.color ="gray";
+    silver.style.color ="gray";
+    lux.style.color ="gray";
     pay_amount.innerText = pay_second_card.innerText* data.people;
 }
 else{
     lux.style.backgroundColor="white";
-    lux.style.color ="gray";
+    silver.style.color ="gray";
+    gold.style.color ="gray";
     pay_amount.innerText = pay_third_card.innerText* data.people;
 
 }
