@@ -83,6 +83,62 @@ cancelSearch.addEventListener('click', () => {
     searchBar.style.display = 'none' 
 })
 
+//login logout functionality
+let loginStatus = JSON.parse(localStorage.getItem("isLoggedIn"));
+let userData = JSON.parse(localStorage.getItem("user-data")) || [];
+
+let userIcon = document.getElementById('usericon')
+let signupBtn = document.getElementById("signup");
+let logoutBtn = document.getElementById("logout");
+
+let currentUser;
+let currentUserIndex;
+
+if(loginStatus == true) {
+  // console.log("Hello")
+  userIcon.style.display = "inline";
+  logoutBtn.style.display = "inline";
+  signupBtn.style.display = "none";
+
+  currentUser = userData.filter((ele,i)=> {
+    if(ele.loggedIn) {
+        currentUserIndex = i;
+        return ele;
+    }
+  })
+  // console.log(currentUser);
+}
+else {
+  // console.log("Hey");
+  userIcon.style.display = "none";
+}
+
+logoutBtn.addEventListener("click", (e) => {
+
+  localStorage.setItem("isLoggedIn", false);
+
+  let newData = userData[currentUserIndex];
+  delete newData.loggedIn;
+
+  userData[currentUserIndex] = newData;
+  localStorage.setItem("user-data", JSON.stringify(userData));
+
+  window.location.reload();
+})
+
+// let obj = {
+//   email: "sourav66@ymail.com",
+//   name: "Sourav",
+//   password: "test123",
+//   type: "admin",
+//   username: "sourav66",
+//   // loggedIn: true
+// };
+
+// let userData = JSON.parse(localStorage.getItem("user-data")) || [];
+// userData.push(obj);
+
+// localStorage.setItem("user-data", JSON.stringify(userData));
 
 
 async function fetchData() {
@@ -201,8 +257,14 @@ function createCityCards(item) {
     book.innerText = "Book Now";
     book.className = "ln-card-btn";
     
+    //checking added for login before booking
     book.addEventListener("click", (e) => {
-      window.location.href = "./package.html"
+      if(loginStatus == true) {
+        window.location.href = "./package.html"
+      }
+      else {
+        window.location.href = "./login.html"
+      }
     })
 
     let moreDetails = document.createElement("button");

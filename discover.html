@@ -9,10 +9,9 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Styles/discover.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles/index.css">
+    <!-- <link rel="stylesheet" href="Styles/index.css"> -->
     <script src="./Scripts/home.js" defer></script>
 </head>
 
@@ -20,7 +19,7 @@
     <header>
         <div class="header-left-items">
                 <button id="menu"><i class="fa-solid fa-bars"></i></button>
-            <div id="logo">WanderWorld</div>
+            <div id="logo"><img src="./assets/logo/black-logo.png" alt=""></div>
         </div>
         <div class="header-right-items">
             <nav>
@@ -29,15 +28,19 @@
                     <li><a href="/discover.html">Discover</a></li>
                     <li><a href="/locations.html">Locations</a></li>
                     <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/support.html">Support</a></li>
+                    <!-- <li><a href="/support.html">Support</a></li> -->
                 </ul>            
             </nav>
-            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass">fd</i></button>
-            <a href=""><i class="fa-solid fa-user"></i></a>
-
-        <!-- <div id="userUpdated" style="font-size: 25px; color: black;"></div> -->
-
-            <a href="./signup.html" id="signup">Sign up</a>
+            <!-- <button id="searchBtn"><i class="fa-solid fa-magnifying-glass">fd</i></button> -->
+            <a href="" id="usericon"><i class="fa-solid fa-user"></i></a>
+  
+            <!-- modified -->
+            <!-- <div id="userUpdated" style="font-size: 25px; color: white;"></div> -->
+  
+            <a href="/signup.html" id="signup">Sign up</a>
+  
+            <!-- Sourav added logout -->
+            <a href="#" id="logout">Log out</a>
         </div>
         
         <div id="searchBar">
@@ -53,69 +56,6 @@
     <div id="pagiContainer"></div>
     <div id="pagination"></div>
 <!-- content over -->
-    <footer>
-        <!-- Newsletter section -->
-        <section id="newsletter">
-            <h2>Subscribe Our Newsletter</h2>
-            <div class="newletter-form">
-                <div id="email-container">
-                    <input type="email" placeholder="Enter Your Email">
-                </div>
-                <button>Subscribe</button>
-            </div>
-        </section>
-
-        <div id="footer-main">
-            <div class="address">
-                <p>WanderWorld</p>
-                <p><i class="fa-solid fa-location-dot"></i> Lakshmipuram road, Guntur, Andhra Pradesh, India</p>
-                <p><i class="fa-solid fa-phone"></i> 0863 -222000</p>
-                <p><i class="fa-solid fa-envelope"></i> support@wanderworld.com</p>
-            </div>
-
-            <div class="link-set" id="link-set-1">
-                <ul>
-                    <li><a href="">My Account</a></li>
-                    <li><a href="">Search Terms</a></li>
-                    <li><a href="">Advanced Search</a></li>
-                    <li><a href="">Orders & Returns</a></li>
-                    <li><a href="">Help & FAQ</a></li>
-                    <li><a href="">Store Locations</a></li>
-                </ul>
-            </div>
-            <div class="link-set" id="link-set-2">
-                <ul>
-                    <li><a href="">Information</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Refunds & Returns</a></li>
-                    <li><a href="">Delivery</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                </ul>
-            </div>
-            <div class="link-set" id="link-set-3">
-                <ul>
-                    <li><a href="">Information</a></li>
-                    <li><a href="">Rock Climbing Gears</a></li>
-                    <li><a href=""></a>Solar Powered Helmet</li>
-                    <li><a href=""></a>Pull Rope Rubber</li>
-                    <li><a href="">Pairing Knife</a></li>
-                    <li><a href="">Ladder Golf</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="socials">
-            <p>Follow Us On</p>
-            <ul>
-                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-        </div>
-
-    </footer>
 
     <!-- End of footer -->
 
