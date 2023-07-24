@@ -3,20 +3,57 @@ let userPresent=localStorage.getItem("users");
 //check if user is logged in and making user icon reappear
 let userIcon = document.getElementById('usericon')
 let signupBtn = document.getElementById('signup')
+let mSignupBtn = document.getElementById('mobile-signup')
 let logoutBtn = document.getElementById('logout')
+let mLogoutBtn = document.getElementById('mobile-logout')
+
+let currentUser;
+let currentUserIndex;
+
+
 
 let userLoginStatus = JSON.parse(localStorage.getItem('isLoggedIn'))
 userIcon.style.display = userLoginStatus === true ? 'inline' :  'none'
 
 if (userLoginStatus === true) {
     logoutBtn.style.display = 'inline'
+    mLogoutBtn.style.display = 'inline'
     signupBtn.style.display = 'none'
+    mSignupBtn.style.display = 'none'
+
+    currentUser = userData.filter((ele,i)=> {
+        if(ele.loggedIn) {
+            currentUserIndex = i;
+            return ele;
+        }
+      })
+      // console.log(currentUser);
 }
 else {
     signupBtn.style.display = 'inline'    
+    mSignupBtn.style.display = 'inline'    
     logoutBtn.style.display = 'none'
+    mLogoutBtn.style.display = 'none'
 }
 
+logoutBtn.addEventListener('click', () => {
+    localStorage.setItem("isLoggedIn", false);
+    let newData = userData[currentUserIndex];
+    delete newData.loggedIn;
+    userData[currentUserIndex] = newData;
+    localStorage.setItem("user-data", JSON.stringify(userData));
+    window.location.reload();
+})
+mLogoutBtn.addEventListener('click', () => {
+    localStorage.setItem("isLoggedIn", false);
+    let newData = userData[currentUserIndex];
+    delete newData.loggedIn;
+    userData[currentUserIndex] = newData;
+    localStorage.setItem("user-data", JSON.stringify(userData));
+    window.location.reload();
+})
+signupBtn.addEventListener('click', () => {window.location.href='./signup.html'})
+mSignupBtn.addEventListener('click', () => {window.location.href='./signup.html'})
 
 
 if(userPresent){
@@ -75,7 +112,7 @@ bookNowBtn.addEventListener('click', () => {
         persons: people.value
     }
     console.log(obj)
-    localStorage.setItem('tour-data', JSON.stringify(obj))
+    localStorage.setItem('booking-detail', JSON.stringify(obj))
     window.location.href = './package.html'
 })
 
