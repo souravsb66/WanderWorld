@@ -1,7 +1,7 @@
 # Project Title
 WanderWorld - Making travel easy & memorable
 
-Live Link: https://wanderworld.netlify.app/
+Deployed URL - https://wanderworld.netlify.app/
 
 # Description
 Welcome to our project! This is a travel website made with the help of techstacks such as HTML, CSS and Javascript. The website allows users to  easily login, logout, book tourist spots and make payments in the website without any flutter or delay. We hope you enjoy and we look forward to your contributions!
