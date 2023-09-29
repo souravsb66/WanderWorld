@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
 }
 
 #searchBar {
@@ -49,7 +49,7 @@ header {
 }
 #logo img{
     /* border: 1px solid black; */
-    height: 30px !important;
+    height: 20px !important;
 }
 
 #usericon {
@@ -305,9 +305,9 @@ p {
 
 }
 
-.cardlist:hover .active:not(:hover) {
+/* .cardlist:hover .active:not(:hover) {
     filter: blur(2px);
-}
+} */
 
 .card.card.active .h1{
     color: rgba(0, 0, 0, 0.863);
