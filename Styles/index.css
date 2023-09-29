@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
 }
 
 
@@ -43,7 +43,7 @@ header {
     width: 60%;
 }
 #logo img{
-    height: 30px;
+    height: 20px;
 }
 
 #usericon {
